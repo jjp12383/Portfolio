@@ -1,0 +1,265 @@
+.admin-window {
+
+  background-color: #fff;
+  position: fixed;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 3px 0 #000;
+  box-shadow: 0 0 3px 0 #000;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  background-color: #ccc;
+  cursor: default;
+  min-width: 90px;
+
+  .admin-window-header {
+    height: 30px;
+    min-height: 30px;
+    width: 100%;
+    background-color: #ccc;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    cursor: default;
+
+    .admin-window-title {
+      font-weight: bold;
+      padding: 3px 5px;
+    }
+
+    .admin-window-actions {
+      float: right;
+      margin: 5px;
+
+      span {
+        display: inline-block;
+        margin-left: 5px;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+
+  .admin-window-body {
+    flex-grow: 2;
+    background-color: #fff;
+    margin: 0 5px 5px 5px;
+    overflow: auto;
+    padding: 10px;
+  }
+}
+
+.admin-task-bar {
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-weight: bold;
+  color: #ccc;
+
+  .admin-console-menu-icon {
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .admin-active-windows {
+    display: flex;
+
+    .min-window {
+      height: 40px;
+      border-radius: 3px;
+      margin-right: 3px;
+      cursor: pointer;
+      border: 2px solid #ccc;
+      padding: 8px 5px;
+    }
+
+    .min-window:hover {
+      background-color: #f8f8f8;
+      border: 2px solid #ccc;
+    }
+  }
+}
+
+.admin-window.maximized {
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.admin-window.minimized {
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+  -webkit-box-shadow: 0 0 0 0 #000;
+  box-shadow: 0 0 0 0 #000;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  min-width: 50px;
+
+  .admin-window-header, .admin-window-body {
+    background-color: transparent;
+
+    .admin-window-actions {
+      display: none;
+    }
+
+    .admin-window-actions span {
+      background: none;
+    }
+
+    .admin-window-title {
+      display: none;
+    }
+  }
+
+  .admin-window-body {
+    display: none;
+  }
+}
+
+.min-window.minimized {
+  background-color: #ccc;
+  color: #000;
+}
+
+.draggable {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 100px);
+  height: 30px;
+  cursor: move;
+}
+
+.n-resize {
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  width: 100%;
+  height: 5px;
+  cursor: n-resize;
+}
+
+.e-resize {
+  position: absolute;
+  top: 0px;
+  left: calc(100% - 2px);
+  width: 5px;
+  height: 100%;
+  cursor: w-resize;
+}
+
+.s-resize {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0px;
+  width: 100%;
+  height: 5px;
+  cursor: s-resize;
+}
+
+.w-resize {
+  position: absolute;
+  top: 0px;
+  left: -3px;
+  width: 5px;
+  height: 100%;
+  cursor: e-resize;
+}
+
+.nw-resize {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 7px;
+  height: 7px;
+  cursor: nw-resize;
+}
+
+.ne-resize {
+  position: absolute;
+  top: -3px;
+  left: calc(100% - 4px);
+  width: 7px;
+  height: 7px;
+  cursor: ne-resize;
+}
+
+.se-resize {
+  position: absolute;
+  top: calc(100% - 4px);
+  left: calc(100% - 4px);
+  width: 7px;
+  height: 7px;
+  cursor: se-resize;
+}
+
+.sw-resize {
+  position: absolute;
+  top: calc(100% - 4px);
+  left: -3px;
+  width: 7px;
+  height: 7px;
+  cursor: sw-resize;
+}
+
+.admin-console-menu {
+  position: absolute;
+  width: 300px;
+  background-color: #666;
+  bottom: 49px;
+  z-index: -1;
+  left: -5px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  -webkit-animation: 0.3s fadeUp;
+  -moz-animation: 0.3s fadeUp;
+  -o-animation: 0.3s fadeUp;
+  animation: 0.3s fadeUp;
+
+  .admin-console-menu-item {
+    padding: 15px;
+    display: table-row;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #888
+    }
+
+    span {
+      display: table-cell;
+    }
+
+    .admin-console-menu-item-text {
+      color: #fff;
+      padding-left: 20px;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      padding-top: 8px;
+    }
+  }
+}
+
+.admin-console-menu.ng-hide {
+  -webkit-animation: 0.3s fadeDown;
+  -moz-animation: 0.3s fadeDown;
+  -o-animation: 0.3s fadeDown;
+  animation: 0.3s fadeDown;
+  opacity: 0;
+}

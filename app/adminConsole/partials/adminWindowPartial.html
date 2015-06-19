@@ -1,0 +1,13 @@
+<div class="admin-window secondary-themed" ng-scope-element="window" window-drag window-resize id="window{{data.createDate}}">
+  <div class="admin-window-header font-themed">
+    <span class="admin-window-title pull-left">{{data.name}}</span>
+    <div class="admin-window-actions">
+      <span class="icon icon-small icon-minimize icon-themed" data-ng-click="minimizeWindow()" data-grunticon-embed="true"></span>
+      <span class="icon icon-small icon-themed" data-ng-class="{'icon-default-size': data.max === true, 'icon-maximize': data.max === false}" data-ng-click="toggleWindowSize()" data-grunticon-embed="true"></span>
+      <span class="icon icon-small icon-close icon-themed" data-ng-click="closeWindow(data.createDate)" data-grunticon-embed="true"></span>
+    </div>
+  </div>
+  <div class="admin-window-body">
+    <div data-ng-include="'adminConsole/partials/' + data.id + 'Partial.html'"></div>
+  </div>
+</div>

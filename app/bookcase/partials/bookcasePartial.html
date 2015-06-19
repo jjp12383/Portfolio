@@ -1,0 +1,39 @@
+<div class="bookcase" data-ng-controller="BookcaseCtrl" ng-cloak>
+  <div class="book-container icon-wood">
+    <div class="book-spine" data-ng-repeat="books in bookcase" on-finish-render hrule>
+      <div class="title" ng-scope-element="title">
+        <div class="hrule"></div>
+        <div class="text" ng-scope-element="titleContainer"><span ng-scope-element="title">{{ books.title }}</span></div>
+        <div class="hrule bottom-title"></div>
+      </div>
+      <div class="symbol" ng-scope-element="symbol"></div>
+      <div class="author" ng-scope-element="author">
+        <div class="hrule"></div>
+        <div class="text" ng-scope-element="authorContainer"><span>{{ books.author }}</span></div>
+        <div class="hrule"></div>
+      </div>
+      <div class="gradient" ng-scope-element="gradient" data-ng-click="openBook()"></div>
+    </div>
+  </div>
+  <div class="shelf-container">
+    <div class="shelf icon-wood">
+      <div class="overlay"></div>
+    </div>
+    <div class="shelf icon-wood">
+      <div class="overlay"></div>
+    </div>
+    <div class="shelf icon-wood">
+      <div class="overlay"></div>
+    </div>
+  </div>
+  <!--<div class="cube-wrap">
+    <div box-generator class="cube depth">
+      <div ng-scope-element="front" class="front-pane"></div>
+      <div ng-scope-element="back" class="back-pane"></div>
+      <div ng-scope-element="top" class="top-pane"></div>
+      <div ng-scope-element="left" class="left-pane"></div>
+      <div ng-scope-element="right" class="right-pane"></div>
+      <div ng-scope-element="bottom" class="bottom-pane"></div>
+    </div>
+  </div>-->
+</div>

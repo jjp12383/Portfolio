@@ -1,0 +1,22 @@
+
+.navbar, .navbar-brand, .navbar-nav > li > a {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+.header-scrolled {
+  min-height: 40px;
+  height: 40px;
+
+  .navbar-brand {
+    padding: 10px;
+  }
+
+  .navbar-nav > li > a {
+    padding: 10px;
+  }
+}
