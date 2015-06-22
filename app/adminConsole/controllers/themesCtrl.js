@@ -14,10 +14,12 @@ angular.module('portfolioApp')
 
     $scope.$on('colorpicker-selected', function(event, colorObject){
       if($scope.primaryThemeColor !== null) {
-        primaryThemedElements.css('background-color', $scope.primaryThemeColor);
+        var pTheme = themeService.addCSSRule('.themed');
+        pTheme.style.backgroundColor = $scope.primaryThemeColor;
       }
       if ($scope.secondaryThemeColor !== null) {
-        secondaryThemedElements.css('background-color', $scope.secondaryThemeColor);
+        var sTheme = themeService.addCSSRule('.secondary-themed');
+        sTheme.style.backgroundColor = $scope.secondaryThemeColor;
       }
       if ($scope.tertiaryThemeColor !== null) {
         tertiaryThemedElements.css('background-color', $scope.tertiaryThemeColor);
