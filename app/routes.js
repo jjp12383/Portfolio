@@ -91,6 +91,11 @@ angular.module('portfolioApp')
         templateUrl: 'about/partials/aboutPartial.html'
       })
 
+      .state('themeBuilder', {
+        url: '/themeBuilder',
+        templateUrl: 'themeBuilder/partials/themeBuilderPartial.html'
+      })
+
       .state('login', {
         url: '/login',
         views:{

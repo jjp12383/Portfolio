@@ -23,4 +23,10 @@ angular.module('portfolioApp', [
     'angular-parallax',
     'ngDragDrop',
     'colorpicker.module'
-  ]);
+  ])
+  /*.run(function ($firebaseArray, Ref, themeService) {
+    var themes = $firebaseArray(Ref.child('admin').child('default').child('themes'));
+    themes.$loaded().then(function () {
+      themeService.addRules(themes);
+    });
+  })*/;

@@ -1,34 +1,42 @@
 angular.module('portfolioApp')
-  .controller('ThemesCtrl', function ($scope, Auth, $location, $q, Ref, $timeout, $firebaseObject, themeService) {
+  .controller('ThemesCtrl', function ($scope, Auth, $location, $q, Ref, $timeout, $firebaseArray, themeService) {
+
     $scope.primaryThemeColor = null;
     $scope.secondaryThemeColor = null;
     $scope.tertiaryThemeColor = null;
     $scope.iconThemeColor = null;
     $scope.fontThemeColor = null;
 
-    var primaryThemedElements = angular.element(document.querySelectorAll(".themed")),
-        secondaryThemedElements = angular.element(document.querySelectorAll(".secondary-themed")),
-        tertiaryThemedElements = angular.element(document.querySelectorAll(".tertiary-themed")),
-        iconThemedElements = angular.element(document.querySelectorAll(".icon-themed")),
-        fontThemedElements = angular.element(document.querySelectorAll(".font-themed"));
-
     $scope.$on('colorpicker-selected', function(event, colorObject){
       if($scope.primaryThemeColor !== null) {
-        var pTheme = themeService.addCSSRule('.themed');
-        pTheme.style.backgroundColor = $scope.primaryThemeColor;
+        var trialThemes = [
+          {
+            themeClass: ".themed",
+            rules: [
+              {
+                property: 'background-color',
+                value: 'blue'
+              }
+            ]
+          }
+        ];
+        themeService.addRules(trialThemes);
       }
       if ($scope.secondaryThemeColor !== null) {
         var sTheme = themeService.addCSSRule('.secondary-themed');
-        sTheme.style.backgroundColor = $scope.secondaryThemeColor;
+        sTheme.style.cssText = "background-color: " + $scope.secondaryThemeColor + " !important;";
       }
       if ($scope.tertiaryThemeColor !== null) {
-        tertiaryThemedElements.css('background-color', $scope.tertiaryThemeColor);
+        var tTheme = themeService.addCSSRule('.tertiary-themed');
+        tTheme.style.cssText = "background-color: " + $scope.tertiaryThemeColor + " !important;";
       }
       if ($scope.iconThemeColor !== null) {
-        iconThemedElements.find('path, rect, circle, polygon').css('fill', $scope.iconThemeColor);
+        var iTheme = themeService.addCSSRule('.icon-themed');
+        iTheme.style.cssText = "fill: " + $scope.iconThemeColor + " !important;";
       }
       if ($scope.fontThemeColor !== null) {
-        fontThemedElements.find('li, p, span, a').css('color', $scope.fontThemeColor);
+        var fTheme = themeService.addCSSRule('li, p, span, a');
+        fTheme.style.cssText = "color: " + $scope.fontThemeColor + " !important;";
       }
     });
 
