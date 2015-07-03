@@ -7,7 +7,11 @@ body {
   padding-top: 50px;
 }
 
-*:focus {
+.nav, .pagination, .carousel, .panel-title a {
+  cursor: pointer;
+}
+
+*:focus, .panel a:focus {
   outline: 0;
 }
 

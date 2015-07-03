@@ -96,6 +96,21 @@ angular.module('portfolioApp')
         templateUrl: 'themeBuilder/partials/themeBuilderPartial.html'
       })
 
+      .state('themeBuilder.bootstrap', {
+        url: '/themeBuilder/bootstrap',
+        templateUrl: 'themeBuilder/bootstrap/partials/bootstrapMenuPartial.html'
+      })
+
+      .state('themeBuilder.foundation', {
+        url: '/themeBuilder/foundation',
+        templateUrl: 'themeBuilder/foundation/partials/foundationMenuPartial.html'
+      })
+
+      .state('themeBuilder.skeleton', {
+        url: '/themeBuilder/skeleton',
+        templateUrl: 'themeBuilder/skeleton/partials/skeletonMenuPartial.html'
+      })
+
       .state('login', {
         url: '/login',
         views:{

@@ -3,14 +3,101 @@
   position: fixed;
   top: 0;
   background-color: #404040;
+  overflow-y: auto;
   -webkit-transition: all .25s ease-out;
   -o-transition: all .25s ease-out;
   transition: all .25s ease-out;
+  padding: 50px 0 0 15px;
+
+  h3 {
+    color: #fff;
+    padding-left: 10px;
+  }
+
+  .legend-row {
+    display: table-row;
+
+    .form-group, .legend-cell {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 10px;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    .legend-cell {
+      text-align: right;
+    }
+  }
+
+  .panel-group .panel {
+    border-radius: 0;
+    margin-top: 0;
+    outline: none;
+
+    .panel-body {
+      display: table;
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .framework-list {
+    display: table;
+    width: 100%;
+
+    .framework-list-row {
+      display: table-row;
+
+      .framework-list-cell {
+        display: table-cell;
+        text-align: center;
+        padding: 10px 10px 7px 10px;
+        background-color: #666;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        box-sizing: border-box;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+          background-color: #a6a6a6;
+          color: #000;
+        }
+
+        &.active {
+          border-bottom: 3px solid #fff;
+
+          &:hover {
+            border-bottom: 3px solid #000;
+          }
+        }
+      }
+    }
+  }
 }
 
 .body-offcanvas {
   left: 25%;
   padding-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .sidebar-offcanvas .framework-list .framework-list-row .framework-list-cell {
+    display: block;
+    border-bottom: 0px solid transparent;
+    border-right: 3px solid transparent;
+    padding: 10px 7px 10px 10px;
+
+    &.active {
+      border-right: 3px solid #fff;
+      border-bottom: 0px solid transparent;
+
+      &:hover {
+        border-right: 3px solid #000;
+        border-bottom: 0px solid transparent;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -47,6 +134,7 @@
     top: 0;
     left: -50%;
     width: 50%; /* 6 columns */
+    padding: 50px 0 0 0;
   }
 
   .row-offcanvas-left.active .sidebar-offcanvas {
