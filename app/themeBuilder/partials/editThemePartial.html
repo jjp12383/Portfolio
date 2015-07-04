@@ -1,0 +1,184 @@
+<div data-ng-controller="EditThemeCtrl">
+  <div off-canvas class="row row-offcanvas row-offcanvas-left">
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+      <accordion class="form-horizontal" close-others="oneAtATime">
+        <accordion-group heading="Color">
+          <div class="legend-row">
+            <div class="form-group">
+              <label class="control-label col-sm-5">Font</label>
+              <div class="col-sm-7">
+                <input class="form-control" colorpicker="hex" colorpicker-with-input="true" data-ng-model="fontColor" />
+              </div>
+            </div>
+          </div>
+          <div class="legend-row">
+            <div class="form-group">
+              <label class="control-label col-sm-5">Background</label>
+              <div class="col-sm-7">
+                <input class="form-control" colorpicker="hex" colorpicker-with-input="true" data-ng-model="backgroundColor" />
+              </div>
+            </div>
+          </div>
+          <div class="legend-row">
+            <div class="form-group">
+              <label class="control-label col-sm-5">Border</label>
+              <div class="col-sm-7">
+                <input class="form-control" colorpicker="hex" colorpicker-with-input="true" data-ng-model="borderColor" />
+              </div>
+            </div>
+          </div>
+          <div class="legend-row">
+            <div class="form-group">
+              <label class="control-label col-sm-5">Text Decoration</label>
+              <div class="col-sm-7">
+                <input class="form-control" colorpicker="hex" colorpicker-with-input="true" data-ng-model="textDecorationColor" />
+              </div>
+            </div>
+          </div>
+        </accordion-group>
+        <accordion-group heading="Background">
+          <div class="legend-row">
+            <div class="form-group">
+              <label class="control-label col-sm-5">Attachment</label>
+              <div class="col-sm-7">
+                <select class="form-control" data-ng-model="backgroundAttachment">
+                  <option value="scroll">Scroll</option>
+                  <option value="fixed">Fixed</option>
+                  <option value="local">Local</option>
+                  <option value="initial">Initial</option>
+                  <option value="inherit">Inherit</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="legend-row">
+            <div class="form-group">
+              <label class="control-label col-sm-5">Clip</label>
+              <div class="col-sm-7">
+                <select class="form-control" data-ng-model="backgroundClip">
+                  <option value="border-box">Border Box</option>
+                  <option value="padding-box">Padding Box</option>
+                  <option value="content-box">Content Box</option>
+                  <option value="initial">Initial</option>
+                  <option value="inherit">Inherit</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="legend-row">
+            <div class="form-group">
+              <label class="control-label col-sm-5">Color</label>
+              <div class="col-sm-7">
+                <input class="form-control" colorpicker="hex" colorpicker-with-input="true" data-ng-model="backgroundColor" />
+              </div>
+            </div>
+          </div>
+          <div class="legend-row">
+            <div class="form-group">
+              <label class="control-label col-sm-5">Image</label>
+              <div class="col-sm-7">
+                <input type="file" class="form-control" data-ng-model="backgroundImage" />
+              </div>
+            </div>
+          </div>
+          <div class="legend-row">
+            <div class="form-group">
+              <label class="control-label col-sm-5">Origin</label>
+              <div class="col-sm-7">
+                <select class="form-control" data-ng-model="backgroundOrigin">
+                  <option value="border-box">Border Box</option>
+                  <option value="padding-box">Padding Box</option>
+                  <option value="content-box">Content Box</option>
+                  <option value="initial">Initial</option>
+                  <option value="inherit">Inherit</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="legend-row">
+            <div class="form-group">
+              <label class="control-label col-sm-12">Position</label>
+              <label class="control-label col-sm-1"><i class="glyphicon glyphicon-resize-horizontal"></i></label>
+              <div class="col-sm-6">
+                <input class="form-control" type="text" list="backgroundPositionHorzSelect" data-ng-model="backgroundPositionHorz"/>
+                <datalist id="backgroundPositionHorzSelect">
+                  <option>Left</option>
+                  <option>Right</option>
+                  <option>Center</option>
+                </datalist>
+              </div>
+              <div class="col-sm-5">
+                <select class="form-control">
+                  <option value="px">px</option>
+                  <option value="%">%</option>
+                  <option value="initial">Initial</option>
+                  <option value="inherit">Inherit</option>
+                </select>
+              </div>
+              <label class="control-label col-sm-1"><i class="glyphicon glyphicon-resize-vertical"></i></label>
+              <div class="col-sm-6">
+                <input class="form-control" type="text" list="backgroundPositionVertSelect" data-ng-model="backgroundPositionVert"/>
+                <datalist id="backgroundPositionVertSelect" >
+                  <option>Top</option>
+                  <option>Bottom</option>
+                  <option>Center</option>
+                </datalist>
+              </div>
+              <div class="col-sm-5">
+                <select class="form-control">
+                  <option value="px">px</option>
+                  <option value="%">%</option>
+                  <option value="initial">Initial</option>
+                  <option value="inherit">Inherit</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="legend-row">
+            <div class="form-group">
+              <label class="control-label col-sm-5">Repeat</label>
+              <div class="col-sm-7">
+                <select class="form-control">
+                  <option value="repeat">Repeat</option>
+                  <option value="repeat-x">Repeat X</option>
+                  <option value="repeat-y">Repeat Y</option>
+                  <option value="no-repeat">No Repeat</option>
+                  <option value="initial">Initial</option>
+                  <option value="inherit">Inherit</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="legend-row">
+            <div class="form-group">
+              <label class="control-label col-sm-12">Size</label>
+              <div class="input-group">
+                <input class="form-control" type="text" list="backgroundSizeSelect" data-ng-model="backgroundSize"/>
+                <datalist id="backgroundSizeSelect">
+                  <option>auto</option>
+                  <option>cover</option>
+                  <option>contain</option>
+                </datalist>
+                <span class="input-group-addon" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{backgroundSizeUnit}}</span>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                  <li data-ng-click="backgroundSizeUnit = 'px'">px</li>
+                  <li data-ng-click="backgroundSizeUnit = '%'">%</li>
+                  <li data-ng-click="backgroundSizeUnit = 'initial'">initial</li>
+                  <li data-ng-click="backgroundSizeUnit = 'inherit'">inherti</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </accordion-group>
+      </accordion>
+    </div>
+    <div class="col-xs-12 col-sm-9 body-offcanvas">
+      <div>
+        <div class="form-group">
+          <label class="control-label">{{theme.label}}</label>
+          <div data-ng-bind-html="trustAsHtml(theme.markup)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

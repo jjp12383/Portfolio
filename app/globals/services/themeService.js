@@ -1,5 +1,5 @@
 angular.module('portfolioApp')
-  .service('themeService', function ($document, $firebaseArray, Ref) {
+  .service('themeService', function ($document, $firebaseArray, Ref, $rootScope, $location) {
 
     var themes = $firebaseArray(Ref.child('admin').child('default').child('themes')),
       sheet = (function() {
@@ -176,6 +176,11 @@ angular.module('portfolioApp')
         }
       }
       return getCSSRule(ruleName);
+    }
+
+    this.editTheme = function (item) {
+      $rootScope.editTheme = item;
+      $location.path('themeBuilder/editTheme');
     }
 
     this.addRules = function(themes) {

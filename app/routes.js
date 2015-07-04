@@ -97,18 +97,23 @@ angular.module('portfolioApp')
       })
 
       .state('themeBuilder.bootstrap', {
-        url: '/themeBuilder/bootstrap',
+        url: '/bootstrap',
         templateUrl: 'themeBuilder/bootstrap/partials/bootstrapMenuPartial.html'
       })
 
       .state('themeBuilder.foundation', {
-        url: '/themeBuilder/foundation',
+        url: '/foundation',
         templateUrl: 'themeBuilder/foundation/partials/foundationMenuPartial.html'
       })
 
       .state('themeBuilder.skeleton', {
-        url: '/themeBuilder/skeleton',
+        url: '/skeleton',
         templateUrl: 'themeBuilder/skeleton/partials/skeletonMenuPartial.html'
+      })
+
+      .state('editTheme', {
+        url: '/themeBuilder/editTheme',
+        templateUrl: 'themeBuilder/partials/editThemePartial.html'
       })
 
       .state('login', {
