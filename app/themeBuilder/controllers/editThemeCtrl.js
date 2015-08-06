@@ -6,6 +6,10 @@ angular.module('portfolioApp')
     }
     $timeout(function() {
       $scope.element = angular.element(document.querySelectorAll('#elementContainer')[0].children);
+      $scope.expand = angular.element(document.querySelectorAll('[data-toggle="dropdown"]'));
+      if($scope.expand) {
+        $scope.element.addClass('open');
+      }
     }, 100);
 
     $scope.selectElement = function () {

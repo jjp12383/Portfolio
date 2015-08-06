@@ -1,188 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1408a3b6-91de-4568-a8d6-674519a485ea" name="Default" comment="Started to add CSS edit menu items.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaComp-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaComp-BoldIta.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaComp-Cond.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaComp-CondBold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaComp-Ita.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaComp.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansComp-Black.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansComp-BlackIta.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansComp-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansComp-BoldIta.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansComp-Cond.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansComp-CondBold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansComp-Ita.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansComp-Light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansComp-LightIta.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansComp.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansScComp-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansScComp-BoldIta.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansScComp-Ita.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansScComp.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansScWeb-Bold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansScWeb-Bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansScWeb-BoldIta.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansScWeb-BoldIta.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansScWeb-Ita.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansScWeb-Ita.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansScWeb.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansScWeb.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWe-Black.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-Black.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-BlackIta.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-BlackIta.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-Bold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-Bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-BoldIta.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-BoldIta.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-Cond.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-Cond.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-CondBold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-CondBold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-Ita.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-Ita.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-Light.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-Light.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-LightIta.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb-LightIta.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaSansWeb.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaScComp-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaScComp-BoldIta.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaScComp-Ita.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaScComp.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaScWeb-Bold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaScWeb-Bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaScWeb-BoldIta.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaScWeb-BoldIta.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaScWeb-Ita.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaScWeb-Ita.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaScWeb.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaScWeb.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaWeb-Bold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaWeb-Bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaWeb-BoldIta.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaWeb-BoldIta.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaWeb-Cond.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaWeb-Cond.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaWeb-CondBold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaWeb-CondBold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaWeb-Ita.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaWeb-Ita.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaWeb.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/ScalaWeb.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/arrow-select.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-2cb26ddfa42ddc2014520594e8cae0ae-hinted.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-2cb26ddfa42ddc2014520594e8cae0ae.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-2cb26ddfa42ddc2014520594e8cae0ae.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-2cb26ddfa42ddc2014520594e8cae0ae.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-ac9c37574fa3ce10a6c4fe5e08446b67.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-ac9c37574fa3ce10a6c4fe5e08446b67.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-ac9c37574fa3ce10a6c4fe5e08446b67.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-d44dd08fd16498e843bc6e870f55fa86.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-d44dd08fd16498e843bc6e870f55fa86.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-d44dd08fd16498e843bc6e870f55fa86.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-hinted.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/choose-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/copy-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/profile-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/review-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/what-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/NeedsReviewFill.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/NeedsReviewOpen.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/PDF_icon.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/cas/buttons/styles/_buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/add.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/arrow-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/bars.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/bell.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/book.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/booklet.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/calendar.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/cart.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-2cb26ddfa42ddc2014520594e8cae0ae.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-ac9c37574fa3ce10a6c4fe5e08446b67.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons-d44dd08fd16498e843bc6e870f55fa86.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/cas-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/cas/buttons/directives/casButtonDirective.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/cas/buttons/partials/casButtonPartial.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/casSandbox/controllers/casSandboxCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/casSandbox/partials/casSandboxPartial.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/check-circle-filled.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/check-circle.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/check.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/chevron-down-heavy.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/chevron-down.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/chevron-left-heavy.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/chevron-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/chevron-right-heavy.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/chevron-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/circle-outline.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/dashboard.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/document.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/download.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/eye.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/facebook.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/filter.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/folder.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/google-plus.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/graduation-hat.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/grid.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/id-card.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/info-circle-filled.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/info-circle.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/institution.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/key.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/linkedin.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/list.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/lock.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/mail.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/needs-review-nofill.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/pencil.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/phone.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/pinterest.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/printer.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/question-mark-circle.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/question-mark.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/receipt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/star.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/themeBuilder/directives/themeBuilderMenuDirective.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/themeBuilder/directives/themeEditorDirective.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/thumbs-up.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/trash.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/twitter.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/unread-circle.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/user.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/utils/services/utilsServices.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/warning-shape.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/warning-symbol.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/warning.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/x.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icons/youtube.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/themeBuilder/styles/_editTheme.scss" afterPath="$PROJECT_DIR$/app/themeBuilder/styles/_editTheme.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/globals/styles/_global.scss" afterPath="$PROJECT_DIR$/app/globals/styles/_global.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/icons/styles/_icons.scss" afterPath="$PROJECT_DIR$/app/components/icons/styles/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/chat/controllers/chat.js" afterPath="$PROJECT_DIR$/app/chat/controllers/chat.js" />
+    <list default="true" id="1408a3b6-91de-4568-a8d6-674519a485ea" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/themeBuilder/controllers/editThemeCtrl.js" afterPath="$PROJECT_DIR$/app/themeBuilder/controllers/editThemeCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/themeBuilder/partials/editThemePartial.html" afterPath="$PROJECT_DIR$/app/themeBuilder/partials/editThemePartial.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/globals/directives/globalDirectives.js" afterPath="$PROJECT_DIR$/app/globals/directives/globalDirectives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css.map" afterPath="$PROJECT_DIR$/app/styles/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/offCanvasMenu/directives/offCanvasMenuDirectives.js" afterPath="$PROJECT_DIR$/app/components/offCanvasMenu/directives/offCanvasMenuDirectives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.js" afterPath="$PROJECT_DIR$/app/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/globals/services/themeService.js" afterPath="$PROJECT_DIR$/app/globals/services/themeService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/adminConsole/controllers/themesCtrl.js" afterPath="$PROJECT_DIR$/app/adminConsole/controllers/themesCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="portfolio.iws" />
@@ -207,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="editThemeCtrl.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="editThemeCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/themeBuilder/controllers/editThemeCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.56792873" vertical-offset="0" max-vertical-offset="449">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -230,7 +51,7 @@
       <file leaf-file-name="themeEditorDirective.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/themeBuilder/directives/themeEditorDirective.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="43" max-vertical-offset="2193">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
               <caret line="115" column="42" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
               <folding />
             </state>
@@ -260,8 +81,8 @@
       <file leaf-file-name="themeBuilderCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/themeBuilder/controllers/themeBuilderCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="544">
-              <caret line="22" column="15" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -270,17 +91,17 @@
       <file leaf-file-name="offCanvasMenuDirectives.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/offCanvasMenu/directives/offCanvasMenuDirectives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="578">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
               <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="themeBuilderMenuDirective.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="themeBuilderMenuDirective.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/themeBuilder/directives/themeBuilderMenuDirective.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8111111" vertical-offset="162" max-vertical-offset="935">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
               <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
               <folding />
             </state>
@@ -300,8 +121,8 @@
       <file leaf-file-name="editThemePartial.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/themeBuilder/partials/editThemePartial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8461537" vertical-offset="2823" max-vertical-offset="3247">
-              <caret line="175" column="69" selection-start-line="175" selection-start-column="69" selection-end-line="175" selection-end-column="69" />
+            <state vertical-scroll-proportion="-13.730769" vertical-offset="612" max-vertical-offset="3247">
+              <caret line="57" column="76" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="76" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -363,11 +184,11 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/utils/services/utilsServices.js" />
         <option value="$PROJECT_DIR$/app/themeBuilder/styles/_editTheme.scss" />
-        <option value="$PROJECT_DIR$/app/themeBuilder/partials/editThemePartial.html" />
-        <option value="$PROJECT_DIR$/app/themeBuilder/controllers/editThemeCtrl.js" />
         <option value="$PROJECT_DIR$/app/themeBuilder/directives/themeEditorDirective.js" />
         <option value="$PROJECT_DIR$/app/globals/services/themeService.js" />
         <option value="$PROJECT_DIR$/app/themeBuilder/directives/themeBuilderMenuDirective.js" />
+        <option value="$PROJECT_DIR$/app/themeBuilder/partials/editThemePartial.html" />
+        <option value="$PROJECT_DIR$/app/themeBuilder/controllers/editThemeCtrl.js" />
       </list>
     </option>
   </component>
@@ -626,7 +447,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="globals" />
+              <option name="myItemId" value="themeBuilder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -644,11 +465,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="globals" />
+              <option name="myItemId" value="themeBuilder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -778,7 +599,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436027363264</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added element specific name-spacing capabilities to the Theme Builder">
+      <created>1438884157033</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1438884157033</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -786,12 +613,13 @@
     <editor active="false" />
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4838013" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48432434" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24762908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24762908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -801,7 +629,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -828,7 +655,8 @@
     <MESSAGE value="Added framework side menu files and routes, and started to populate the Bootstrap UI menu." />
     <MESSAGE value="Figured out dragging menu items to the main body and built out theme builder grid system." />
     <MESSAGE value="Started to add CSS edit menu items." />
-    <option name="LAST_COMMIT_MESSAGE" value="Started to add CSS edit menu items." />
+    <MESSAGE value="Added element specific name-spacing capabilities to the Theme Builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added element specific name-spacing capabilities to the Theme Builder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1129,14 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/themeBuilder/controllers/themeBuilderCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1870">
@@ -1153,37 +973,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/themeBuilder/styles/_editTheme.scss">
+    <entry file="file://$PROJECT_DIR$/app/globals/services/themeService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1173">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/themeBuilder/controllers/editThemeCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="974" max-vertical-offset="3604">
+          <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/themeBuilder/partials/editThemePartial.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8461537" vertical-offset="2823" max-vertical-offset="3247">
-          <caret line="175" column="69" selection-start-line="175" selection-start-column="69" selection-end-line="175" selection-end-column="69" />
+        <state vertical-scroll-proportion="-13.730769" vertical-offset="612" max-vertical-offset="3247">
+          <caret line="57" column="76" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="76" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/offCanvasMenu/directives/offCanvasMenuDirectives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,18 +999,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/globals/services/themeService.js">
+    <entry file="file://$PROJECT_DIR$/app/themeBuilder/directives/themeBuilderMenuDirective.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="974" max-vertical-offset="3604">
-          <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="935">
+          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/themeBuilder/directives/themeBuilderMenuDirective.js">
+    <entry file="file://$PROJECT_DIR$/app/themeBuilder/controllers/themeBuilderCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8111111" vertical-offset="162" max-vertical-offset="935">
-          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/themeBuilder/styles/_editTheme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1173">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/offCanvasMenu/directives/offCanvasMenuDirectives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/themeBuilder/controllers/editThemeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56792873" vertical-offset="0" max-vertical-offset="449">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding />
         </state>
       </provider>
