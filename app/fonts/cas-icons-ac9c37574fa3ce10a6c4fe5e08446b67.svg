@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20120731 at Mon Apr 21 08:31:58 2014
+ By Dan Wilt
+Created by Dan Wilt with FontForge 2.0 (http://fontforge.sf.net)
+</metadata>
+<defs>
+<font id="cas-icons" horiz-adv-x="461" >
+  <font-face 
+    font-family="cas-icons"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 6 9 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -8 461 391"
+    underline-thickness="25"
+    underline-position="-52"
+    unicode-range="U+E001-E001"
+  />
+<missing-glyph 
+d="M17 0v341h136v-341h-136zM34 17h102v307h-102v-307z" />
+    <glyph glyph-name=".notdef" 
+d="M17 0v341h136v-341h-136zM34 17h102v307h-102v-307z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="uniE001" unicode="&#xe001;" 
+d="M200 158q22 -15 33 -35q9 -18 9 -44q0 -19 -8 -32q-11 -18 -22 -28q-12 -10 -38 -20q-21 -7 -51 -7q-34 0 -61 9q-30 10 -45 25q-17 17 -17 37q0 34 34 61q33 26 84 26h20q-16 16 -16 33q0 14 6 23q-1 0 -4.5 -0.5t-6.5 -0.5q-41 0 -67 25q-25 25 -25 62q0 23 15 44
+t39 33t51 12h121l-27 -19h-38q17 -7 28 -27t11 -43q0 -36 -34 -62q-15 -12 -18 -19q-4 -7 -4 -17q0 -8 10 -19q7 -7 21 -17zM123 12q46 0 67 18q20 16 20 45v12q-3 8 -4 10q-4 6 -5 7l-8 8l-9 6q-1 0 -4.5 3t-6.5 5q-9 6 -11 8q-17 4 -30 5q-22 0 -43 -9t-32 -23
+q-12 -15 -12 -31q0 -27 22 -46q19 -18 56 -18zM135 218q23 -2 37 20q13 20 10 52q-3 29 -24 52q-20 22 -43 23q-23 2 -37 -20q-12 -19 -9 -51q3 -30 23 -53q23 -23 43 -23zM461 314v-19h-77v-77h-19v77h-77v19h77v77h19v-77h77z" />
+  </font>
+</defs></svg>

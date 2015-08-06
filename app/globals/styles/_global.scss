@@ -78,3 +78,104 @@ body {
     opacity: 0;
   }
 }
+
+// --------------------------------------------------
+// Scala
+// --------------------------------------------------
+
+@font-face {
+  font-family: 'Scala';
+  src: url('../fonts/ScalaWeb.eot');
+  src: url('../fonts/ScalaWeb.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ScalaWeb.woff') format('woff'),
+  url('../fonts/ScalaComp.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scala';
+  src: url('../fonts/ScalaWeb-Bold.eot');
+  src: url('../fonts/ScalaWeb-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ScalaWeb-Bold.woff') format('woff'),
+  url('../fonts/ScalaComp-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scala';
+  src: url('../fonts/ScalaWeb-Ita.eot');
+  src: url('../fonts/ScalaWeb-Ita.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ScalaWeb-Ita.woff') format('woff'),
+  url('../fonts/ScalaComp-Ita.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+// --------------------------------------------------
+// Scala Sans
+// --------------------------------------------------
+
+@font-face {
+  font-family: 'ScalaSans';
+  src: url('../fonts/ScalaSansWeb.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ScalaSansWeb.woff') format('woff'),
+  url('../fonts/ScalaSansComp.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ScalaSans';
+  src: url('../fonts}/ScalaSansWeb-Bold.eot');
+  src: url('../fonts/ScalaSansWeb-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ScalaSansWeb-Bold.woff') format('woff'),
+  url('../fonts/ScalaSansComp-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ScalaSans';
+  src: url('../fonts/ScalaSansWeb-Ita.eot');
+  src: url('../fonts/ScalaSansWeb-Ita.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ScalaSansWeb-Ita.woff') format('woff'),
+  url('../fonts/ScalaSansComp-Ita.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+// --------------------------------------------------
+// Scala Sans Caps
+// --------------------------------------------------
+
+@font-face {
+  font-family: 'ScalaSansCaps';
+  src: url('../fonts/ScalaSansScWeb.eot');
+  src: url('../fonts/ScalaSansScWeb.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ScalaSansScWeb.woff') format('woff'),
+  url('../fonts/ScalaSansScComp.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ScalaSansCaps';
+  src: url('../fonts/ScalaSansScWeb-Bold.eot');
+  src: url('../fonts/ScalaSansScWeb-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ScalaSansScWeb-Bold.woff') format('woff'),
+  url('../fonts/ScalaSansScComp-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ScalaSansCaps';
+  src: url('../fonts/ScalaSansScWeb-Ita.eot');
+  src: url('../fonts/ScalaSansScWeb-Ita.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ScalaSansScWeb-Ita.woff') format('woff'),
+  url('../fonts/ScalaSansScComp-Ita.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}

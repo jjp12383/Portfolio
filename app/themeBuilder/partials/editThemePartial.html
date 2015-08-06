@@ -1,27 +1,27 @@
 <div data-ng-controller="EditThemeCtrl">
   <div off-canvas class="row row-offcanvas row-offcanvas-left">
-    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" style-menu>
       <accordion class="form-horizontal" close-others="oneAtATime">
         <accordion-group heading="Color">
           <div class="legend-row">
-            <div class="form-group">
-              <label class="control-label col-sm-5">Font</label>
+            <div class="form-group" style-group>
+              <label class="control-label col-sm-5">Color</label>
               <div class="col-sm-7">
-                <input class="form-control" colorpicker="hex" colorpicker-with-input="true" data-ng-model="fontColor" />
+                <input style-input name="test" class="form-control" colorpicker="hex" colorpicker-with-input="true" data-ng-model="fontColor" />
+              </div>
+            </div>
+          </div>
+          <div class="legend-row">
+            <div class="form-group" style-group>
+              <label class="control-label col-sm-5">Background Color</label>
+              <div class="col-sm-7">
+                <input style-input class="form-control" colorpicker="hex" colorpicker-with-input="true" data-ng-model="backgroundColor" />
               </div>
             </div>
           </div>
           <div class="legend-row">
             <div class="form-group">
-              <label class="control-label col-sm-5">Background</label>
-              <div class="col-sm-7">
-                <input class="form-control" colorpicker="hex" colorpicker-with-input="true" data-ng-model="backgroundColor" />
-              </div>
-            </div>
-          </div>
-          <div class="legend-row">
-            <div class="form-group">
-              <label class="control-label col-sm-5">Border</label>
+              <label class="control-label col-sm-5">Border Color</label>
               <div class="col-sm-7">
                 <input class="form-control" colorpicker="hex" colorpicker-with-input="true" data-ng-model="borderColor" />
               </div>
@@ -172,11 +172,12 @@
         </accordion-group>
       </accordion>
     </div>
-    <div class="col-xs-12 col-sm-9 body-offcanvas">
+    <div class="col-xs-12 col-sm-9 body-offcanvas" id="editTheme">
+      <button data-ng-click="selectElement()">Select Element</button>
       <div>
-        <div class="form-group">
+        <div class="form-group" style="left: 200px">
           <label class="control-label">{{theme.label}}</label>
-          <div data-ng-bind-html="trustAsHtml(theme.markup)"></div>
+          <div data-ng-bind-html="trustAsHtml(theme.markup)" id="elementContainer" compile-template highlight-elements></div>
         </div>
       </div>
     </div>

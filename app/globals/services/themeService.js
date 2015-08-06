@@ -21,80 +21,80 @@ angular.module('portfolioApp')
       sheet.addRule(".dummy-rule", "font-size: 12px", 0);
     }
 
-    this.addNameSpace = function (el, styleProp, styleValue, nameSpace) {
-      var element = el[0],
+    this.addNameSpace = function (el, rules, nameSpace) {
+      for(var s=0; s < rules.length; s++) {
+        var element = el[0],
           currentStyle,
           ruleList = element.classList,
-          styleProp = styleProp.toLowerCase(),
-          styleSheet,
-          matchedRules = [];
-      if (element.currentStyle) {
-        currentStyle = element.currentStyle[styleProp];
-      } else if (window.getComputedStyle) {
-        currentStyle = document.defaultView.getComputedStyle(element, null).getPropertyValue(styleProp);
-      }
-      for(var r=0; r < ruleList.length; r++) {
-        var ruleName = ruleList[r].toLowerCase();
-        if (document.styleSheets) {
-          for (var i = 0; i < document.styleSheets.length; i++) {
-            styleSheet = document.styleSheets[i];
-            var ii=0;
-            var cssRule=false;
-            do {
-              if (styleSheet.cssRules) {
-                cssRule = styleSheet.cssRules[ii];
-              } else {
-                cssRule = styleSheet.rules[ii];
-              }
-              if (cssRule && cssRule.selectorText)  {
-                var selector = cssRule.selectorText.toLocaleLowerCase(),
-                  endOfSelector = selector.length,
-                  themes;
-                if (cssRule.selectorText.toLowerCase().indexOf(ruleName + ' ') > 0
-                    || cssRule.selectorText.toLowerCase().indexOf(ruleName + ',') > 0
-                    && cssRule.cssText.indexOf(styleProp + ': ' + currentStyle) > 0) {
-                  var nameSpaceClass = '.' + nameSpace;
-                  selector = replaceAll(nameSpaceClass, '', selector);
-                  selector = selector + selector.slice(endOfSelector) + '.' + nameSpace;
-                  selector = replaceAll(',', nameSpaceClass + ',', selector);
-                  themes = [
-                    {
-                      themeClass: selector,
-                      rules: [
-                        {
-                          property: styleProp,
-                          value: styleValue
-                        }
-                      ]
-                    }
-                  ];
-                  this.addRules(themes);
-                } else if (cssRule.selectorText.toLowerCase().indexOf(ruleName + ' ') > 0
-                          || cssRule.selectorText.toLowerCase().indexOf(ruleName + ',') > 0) {
-                  var nameSpaceClass = '.' + nameSpace;
-                  selector = replaceAll(nameSpaceClass, '', selector);
-                  selector = selector + selector.slice(endOfSelector) + '.' + nameSpace;
-                  selector = replaceAll(',', nameSpaceClass + ',', selector);
-                  themes = [
-                    {
-                      themeClass: selector,
-                      rules: [
-                        {
-                          property: styleProp,
-                          value: styleValue
-                        }
-                      ]
-                    }
-                  ];
-                  this.addRules(themes);
+          styleProp = rules[s].property.toLowerCase(),
+          styleSheet;
+        if (element.currentStyle) {
+          currentStyle = element.currentStyle[styleProp];
+        } else if (window.getComputedStyle) {
+          currentStyle = document.defaultView.getComputedStyle(element, null).getPropertyValue(styleProp);
+        }
+        for(var r=0; r < ruleList.length; r++) {
+          var ruleName = ruleList[r].toLowerCase();
+          if (document.styleSheets) {
+            for (var i = 0; i < document.styleSheets.length; i++) {
+              styleSheet = document.styleSheets[i];
+              var ii=0;
+              var cssRule=false;
+              do {
+                if (styleSheet.cssRules) {
+                  cssRule = styleSheet.cssRules[ii];
+                } else {
+                  cssRule = styleSheet.rules[ii];
                 }
-              }
-              ii++;
-            } while (cssRule)
+                if (cssRule && cssRule.selectorText)  {
+                  var selector = cssRule.selectorText.toLowerCase(),
+                      endOfSelector = selector.length,
+                      cssText = cssRule.cssText,
+                      themes;
+                  if ((cssText.indexOf(ruleName + ' ') > -1 || cssText.indexOf(ruleName + ',') > -1 || cssText.indexOf(ruleName + ' {') > -1 || cssText.indexOf(ruleName + '{') > -1 ) && ((cssRule.cssText.indexOf(styleProp + ': ' + currentStyle) > -1) || (cssRule.cssText.indexOf(styleProp + ':' + currentStyle) > -1))) {
+                    var nameSpaceClass = '.' + nameSpace;
+                    selector = replaceAll(nameSpaceClass, '', selector);
+                    selector = selector + selector.slice(endOfSelector) + '.' + nameSpace;
+                    selector = replaceAll(',', nameSpaceClass + ',', selector);
+                    themes = [
+                      {
+                        themeClass: selector,
+                        rules: [
+                          {
+                            property: styleProp,
+                            value: rules[s].value
+                          }
+                        ]
+                      }
+                    ];
+                    this.addRules(themes);
+                  } else if (cssText.indexOf(ruleName + ' {') > -1
+                    || cssText.indexOf(ruleName + ',') > -1
+                    || cssText.indexOf(ruleName + '{') > -1) {
+                    var nameSpaceClass = '.' + nameSpace;
+                    selector = replaceAll(nameSpaceClass, '', selector);
+                    selector = selector + selector.slice(endOfSelector) + '.' + nameSpace;
+                    selector = replaceAll(',', nameSpaceClass + ',', selector);
+                    themes = [
+                      {
+                        themeClass: selector,
+                        rules: [
+                          {
+                            property: styleProp,
+                            value: rules[s].value
+                          }
+                        ]
+                      }
+                    ];
+                    this.addRules(themes);
+                  }
+                }
+                ii++;
+              } while (cssRule)
+            }
           }
         }
       }
-      return matchedRules;
     }
 
     this.getExistingRule = function (ruleList, style) {
@@ -115,7 +115,6 @@ angular.module('portfolioApp')
               }
               if (cssRule && cssRule.selectorText)  {
                 if (cssRule.selectorText.toLowerCase().indexOf(ruleName) > 0 && cssRule.cssText.indexOf(style) > 0) {
-                  console.log(cssRule);
                 }
               }
               ii++;

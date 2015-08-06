@@ -1058,6 +1058,239 @@
   height: 32px;
   width: 32px; }
 
+@font-face {
+  font-family: "cas-icons";
+  src: url("fonts/cas-icons.eot");
+  font-weight: normal;
+  font-style: normal; }
+.cas-icon-add,
+.cas-icon-arrow-right,
+.cas-icon-bars,
+.cas-icon-bell,
+.cas-icon-book,
+.cas-icon-booklet,
+.cas-icon-calendar,
+.cas-icon-cart,
+.cas-icon-check-circle-filled,
+.cas-icon-check-circle,
+.cas-icon-check,
+.cas-icon-chevron-down-heavy,
+.cas-icon-chevron-down,
+.cas-icon-chevron-left-heavy,
+.cas-icon-chevron-left,
+.cas-icon-chevron-right-heavy,
+.cas-icon-chevron-right,
+.cas-icon-circle-outline,
+.cas-icon-dashboard,
+.cas-icon-document,
+.cas-icon-download,
+.cas-icon-eye,
+.cas-icon-facebook,
+.cas-icon-filter,
+.cas-icon-folder,
+.cas-icon-google-plus,
+.cas-icon-graduation-hat,
+.cas-icon-grid,
+.cas-icon-id-card,
+.cas-icon-info-circle-filled,
+.cas-icon-info-circle,
+.cas-icon-institution,
+.cas-icon-key,
+.cas-icon-list,
+.cas-icon-lock,
+.cas-icon-mail,
+.cas-icon-pencil,
+.cas-icon-phone,
+.cas-icon-pinterest,
+.cas-icon-printer,
+.cas-icon-question-mark-circle,
+.cas-icon-question-mark,
+.cas-icon-receipt,
+.cas-icon-star,
+.cas-icon-thumbs-up,
+.cas-icon-trash,
+.cas-icon-twitter,
+.cas-icon-unread-circle,
+.cas-icon-user,
+.cas-icon-warning-shape,
+.cas-icon-warning-symbol,
+.cas-icon-warning,
+.cas-icon-x,
+.cas-icon-linkedin,
+.cas-icon-youtube {
+  font-family: "cas-icons";
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit; }
+
+.cas-icon-add {
+  content: "\e001"; }
+
+.cas-icon-arrow-right {
+  content: "\e002"; }
+
+.cas-icon-bars {
+  content: "\e003"; }
+
+.cas-icon-bell {
+  content: "\e004"; }
+
+.cas-icon-book {
+  content: "\e005"; }
+
+.cas-icon-booklet {
+  content: "\e006"; }
+
+.cas-icon-calendar {
+  content: "\e007"; }
+
+.cas-icon-cart {
+  content: "\e008"; }
+
+.cas-icon-check-circle-filled {
+  content: "\e009"; }
+
+.cas-icon-check-circle {
+  content: "\e00a"; }
+
+.cas-icon-check {
+  content: "\e00b"; }
+
+.cas-icon-chevron-down-heavy {
+  content: "\e00c"; }
+
+.cas-icon-chevron-down {
+  content: "\e00d"; }
+
+.cas-icon-chevron-left-heavy {
+  content: "\e00e"; }
+
+.cas-icon-chevron-left {
+  content: "\e00f"; }
+
+.cas-icon-chevron-right-heavy {
+  content: "\e010"; }
+
+.cas-icon-chevron-right {
+  content: "\e011"; }
+
+.cas-icon-circle-outline {
+  content: "\e012"; }
+
+.cas-icon-dashboard {
+  content: "\e013"; }
+
+.cas-icon-document {
+  content: "\e014"; }
+
+.cas-icon-download {
+  content: "\e015"; }
+
+.cas-icon-eye {
+  content: "\e016"; }
+
+.cas-icon-facebook {
+  content: "\e017"; }
+
+.cas-icon-filter {
+  content: "\e018"; }
+
+.cas-icon-folder {
+  content: "\e019"; }
+
+.cas-icon-google-plus {
+  content: "\e01a"; }
+
+.cas-icon-graduation-hat {
+  content: "\e01b"; }
+
+.cas-icon-grid {
+  content: "\e01c"; }
+
+.cas-icon-id-card {
+  content: "\e01d"; }
+
+.cas-icon-info-circle-filled {
+  content: "\e01e"; }
+
+.cas-icon-info-circle {
+  content: "\e01f"; }
+
+.cas-icon-institution {
+  content: "\e020"; }
+
+.cas-icon-key {
+  content: "\e021"; }
+
+.cas-icon-list {
+  content: "\e022"; }
+
+.cas-icon-lock {
+  content: "\e023"; }
+
+.cas-icon-mail {
+  content: "\e024"; }
+
+.cas-icon-pencil {
+  content: "\e025"; }
+
+.cas-icon-phone {
+  content: "\e026"; }
+
+.cas-icon-pinterest {
+  content: "\e027"; }
+
+.cas-icon-printer {
+  content: "\e028"; }
+
+.cas-icon-question-mark-circle {
+  content: "\e029"; }
+
+.cas-icon-question-mark {
+  content: "\e02a"; }
+
+.cas-icon-receipt {
+  content: "\e02b"; }
+
+.cas-icon-star {
+  content: "\e02c"; }
+
+.cas-icon-thumbs-up {
+  content: "\e02d"; }
+
+.cas-icon-trash {
+  content: "\e02e"; }
+
+.cas-icon-twitter {
+  content: "\e02f"; }
+
+.cas-icon-unread-circle {
+  content: "\e030"; }
+
+.cas-icon-user {
+  content: "\e031"; }
+
+.cas-icon-warning-shape {
+  content: "\e032"; }
+
+.cas-icon-warning-symbol {
+  content: "\e033"; }
+
+.cas-icon-warning {
+  content: "\e034"; }
+
+.cas-icon-x {
+  content: "\e035"; }
+
+.cas-icon-linkedin {
+  background-image: url("../images/linkedin.jpg");
+  height: 32px; }
+
+.cas-icon-youtube {
+  background-image: url("../images/youtube.jpg");
+  height: 32px; }
+
 .navbar, .navbar-brand, .navbar-nav > li > a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1297,9 +1530,111 @@ body {
     -ms-transform: translateY(10px);
     transform: translateY(10px);
     opacity: 0; } }
+@font-face {
+  font-family: 'Scala';
+  src: url("../fonts/ScalaWeb.eot");
+  src: url("../fonts/ScalaWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/ScalaWeb.woff") format("woff"), url("../fonts/ScalaComp.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'Scala';
+  src: url("../fonts/ScalaWeb-Bold.eot");
+  src: url("../fonts/ScalaWeb-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ScalaWeb-Bold.woff") format("woff"), url("../fonts/ScalaComp-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Scala';
+  src: url("../fonts/ScalaWeb-Ita.eot");
+  src: url("../fonts/ScalaWeb-Ita.eot?#iefix") format("embedded-opentype"), url("../fonts/ScalaWeb-Ita.woff") format("woff"), url("../fonts/ScalaComp-Ita.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+@font-face {
+  font-family: 'ScalaSans';
+  src: url("../fonts/ScalaSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/ScalaSansWeb.woff") format("woff"), url("../fonts/ScalaSansComp.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'ScalaSans';
+  src: url("../fonts}/ScalaSansWeb-Bold.eot");
+  src: url("../fonts/ScalaSansWeb-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ScalaSansWeb-Bold.woff") format("woff"), url("../fonts/ScalaSansComp-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'ScalaSans';
+  src: url("../fonts/ScalaSansWeb-Ita.eot");
+  src: url("../fonts/ScalaSansWeb-Ita.eot?#iefix") format("embedded-opentype"), url("../fonts/ScalaSansWeb-Ita.woff") format("woff"), url("../fonts/ScalaSansComp-Ita.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+@font-face {
+  font-family: 'ScalaSansCaps';
+  src: url("../fonts/ScalaSansScWeb.eot");
+  src: url("../fonts/ScalaSansScWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/ScalaSansScWeb.woff") format("woff"), url("../fonts/ScalaSansScComp.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'ScalaSansCaps';
+  src: url("../fonts/ScalaSansScWeb-Bold.eot");
+  src: url("../fonts/ScalaSansScWeb-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ScalaSansScWeb-Bold.woff") format("woff"), url("../fonts/ScalaSansScComp-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'ScalaSansCaps';
+  src: url("../fonts/ScalaSansScWeb-Ita.eot");
+  src: url("../fonts/ScalaSansScWeb-Ita.eot?#iefix") format("embedded-opentype"), url("../fonts/ScalaSansScWeb-Ita.woff") format("woff"), url("../fonts/ScalaSansScComp-Ita.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
 .form-horizontal .legend-row .control-label {
   padding-left: 5px;
   text-align: left !important; }
+
+.left-menu-btn {
+  margin: 5px; }
+
+.highlighterTopLeft,
+.highlighterTop,
+.highlighterTopRight,
+.highlighterRight,
+.highlighterBottomRight,
+.highlighterBottom,
+.highlighterBottomLeft,
+.highlighterLeft {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear; }
+
+.highlighterTopLeft {
+  border-bottom: 1px dashed #ff0000;
+  border-right: 1px dashed #ff0000; }
+
+.highlighterTop {
+  border-bottom: 1px dashed #ff0000; }
+
+.highlighterTopRight {
+  border-bottom: 1px dashed #ff0000;
+  border-left: 1px dashed #ff0000; }
+
+.highlighterRight {
+  border-left: 1px dashed #ff0000; }
+
+.highlighterBottomRight {
+  border-top: 1px dashed #ff0000;
+  border-left: 1px dashed #ff0000; }
+
+.highlighterBottom {
+  border-top: 1px dashed #ff0000; }
+
+.highlighterBottomLeft {
+  border-top: 1px dashed #ff0000;
+  border-right: 1px dashed #ff0000; }
+
+.highlighterLeft {
+  border-right: 1px dashed #ff0000; }
 
 .ui-view-container {
   position: relative; }

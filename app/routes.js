@@ -116,6 +116,11 @@ angular.module('portfolioApp')
         templateUrl: 'themeBuilder/partials/editThemePartial.html'
       })
 
+      .state('casSandbox', {
+        url: '/casSandbox',
+        templateUrl: 'casSandbox/partials/casSandboxPartial.html'
+      })
+
       .state('login', {
         url: '/login',
         views:{

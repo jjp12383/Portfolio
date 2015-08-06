@@ -16,6 +16,10 @@ angular.module('portfolioApp')
               {
                 property: 'background-color',
                 value: 'blue'
+              },
+              {
+                property: 'padding',
+                value: '100px'
               }
             ]
           }

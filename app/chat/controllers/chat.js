@@ -30,4 +30,5 @@ angular.module('portfolioApp')
         $scope.err = null;
       }, 5000);
     }
+
   });

@@ -7,7 +7,17 @@ angular.module('portfolioApp')
             toggleButtonTwo = angular.element(document.querySelectorAll("#toggleOffMenu2"));
         toggleButton.click(function () {
           element.toggleClass('active');
-          themeService.addNameSpace(toggleButton, 'padding', '20px 30px', 'test');
+          var rules = [
+            {
+              property: 'background-color',
+              value: 'blue'
+            },
+            {
+              property: 'padding',
+              value: '100px'
+            }
+          ];
+          themeService.addNameSpace(toggleButton, rules, 'test');
           toggleButton.toggleClass('test');
         });
         toggleButtonTwo.click(function () {
