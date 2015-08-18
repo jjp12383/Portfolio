@@ -23,7 +23,8 @@ angular.module('portfolioApp', [
     'angular-parallax',
     'ngDragDrop',
     'colorpicker.module',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ui.slider'
   ])
   /*.run(function ($firebaseArray, Ref, themeService) {
     var themes = $firebaseArray(Ref.child('admin').child('default').child('themes'));

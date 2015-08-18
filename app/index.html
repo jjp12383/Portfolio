@@ -16,6 +16,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/minified/jquery-ui.min.css" />
     <link rel="stylesheet" href="bower_components/angular-bootstrap-colorpicker/css/colorpicker.css" />
     <!-- endbower -->
     <!-- endbuild -->
@@ -61,10 +62,11 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/angular-parallax/scripts/angular-parallax.js"></script>
-    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
     <script src="bower_components/angular-dragdrop/src/angular-dragdrop.js"></script>
     <script src="bower_components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-ui-slider/src/slider.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -73,7 +75,6 @@
         <script src="main/controllers/main.js"></script>
         <script src="angularfire/config.js"></script>
         <script src="angularfire/firebase.ref.js"></script>
-        <script src="chat/controllers/chat.js"></script>
         <script src="utils/filters/reverse.js"></script>
         <script src="angularfire/auth.js"></script>
         <script src="login/controllers/login.js"></script>
@@ -85,8 +86,10 @@
         <script src="utils/directives/ngHideAuth.js"></script>
         <script src="utils/services/utilsServices.js"></script>
         <script src="components/navbar/directives/scrollSpyDirective.js"></script>
+        <script src="components/slider/directives/sliderDirectives.js"></script>
         <script src="bookcase/directives/bookDirective.js"></script>
         <script src="bookcase/controllers/bookcaseCtrl.js"></script>
+        <script src="uiTestbed/controllers/uiTestBedController.js"></script>
         <script src="adminConsole/controllers/adminConsoleCtrl.js"></script>
         <script src="adminConsole/controllers/themesCtrl.js"></script>
         <script src="adminConsole/directives/adminConsoleDirectives.js"></script>

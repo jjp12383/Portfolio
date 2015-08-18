@@ -76,6 +76,11 @@ angular.module('portfolioApp')
         templateUrl: 'portfolio/partials/portfolioPartial.html'
       })
 
+      .state('uiTestBed', {
+        url: '/uiTestBed',
+        templateUrl: 'uiTestBed/partials/uiTestBedPartial.html'
+      })
+
       .state('bookcase', {
         url: '/bookcase',
         templateUrl: 'bookcase/partials/bookcasePartial.html'

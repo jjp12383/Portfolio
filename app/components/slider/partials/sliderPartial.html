@@ -1,0 +1,8 @@
+<div class="slider">
+  <div class="slider-popup gradient" data-ng-class="popupContent !== 'hide' ? 'display-popup' : 'hide-popup'"></div>
+  <span class="slider-fill"></span>
+  <button class="slider-button" jp-slider-button segments="segments" snap-to="snapTo" popup-fade="popupFade" min-value="minValue" max-value="maxValue" popup-content="popupContent" colors="colors"></button>
+  <ul class="slider-segments" data-ng-class="displayTicks ? 'display-ticks' : 'hide-ticks'">
+    <li data-ng-repeat="segment in segments" class="slider-segment" jp-slider-segment segment-length="{{segmentLength}}" data-ng-if="!$first"></li>
+  </ul>
+</div>
