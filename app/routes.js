@@ -57,7 +57,7 @@ angular.module('portfolioApp')
   // before trying to access that route
   .config(['$stateProvider','$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/main');
+    $urlRouterProvider.otherwise('/');
 
     $stateProvider
 
@@ -128,20 +128,14 @@ angular.module('portfolioApp')
 
       .state('login', {
         url: '/login',
-        views:{
-          content:{
-            templateUrl: 'login/partials/login.html'
-          }
-        }
+        templateUrl: 'login/partials/login.html',
+        controller: 'LoginCtrl'
       })
 
       .whenAuthenticated('account', {
         url: '/account',
-        views:{
-          content:{
-            templateUrl: 'account/partials/account.html'
-          }
-        }
+        templateUrl: 'account/partials/account.html',
+        controller: 'AccountCtrl'
       });
   }])
 

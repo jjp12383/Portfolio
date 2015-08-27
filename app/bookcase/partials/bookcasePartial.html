@@ -1,39 +1,82 @@
-<div class="bookcase" data-ng-controller="BookcaseCtrl" ng-cloak>
-  <div class="book-container icon-wood">
-    <div class="book-spine" data-ng-repeat="books in bookcase" on-finish-render hrule>
-      <div class="title" ng-scope-element="title">
-        <div class="hrule"></div>
-        <div class="text" ng-scope-element="titleContainer"><span ng-scope-element="title">{{ books.title }}</span></div>
-        <div class="hrule bottom-title"></div>
+<div class="container-fluid" data-ng-controller="BookcaseCtrl" ng-cloak>
+  <div class="ui-view-container">
+    <div off-canvas class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-6 col-sm-3 sidebar-offcanvas book-sidebar" id="sidebar">
+        <div class="sidebar-top icon-wood"><div class="sidebar-overlay-horizontal"></div></div>
+        <div class="sidebar-left icon-wood-90"><div class="sidebar-overlay-vertical"></div></div>
+        <div class="sidebar-right icon-wood-90"><div class="sidebar-overlay-vertical"></div></div>
+        <div class="sidebar-bottom icon-wood"><div class="sidebar-overlay-horizontal"></div></div>
+        <div class="forms-container">
+          <legend>My Library</legend>
+          <div class="form-group">
+            <label class="control-label">Select A Shelf</label>
+            <select class="form-control" ng-options="shelf.id as shelf.title for shelf in totalShelves track by shelf.id" data-ng-model="selectedShelf" data-ng-change="setShelf(selectedShelf)"></select>
+          </div>
+          <button class="btn btn-md btn-primary" data-ng-click="getMyLibrary()">Get My Library</button>
+          <br />
+          <br />
+          <legend>Search Google Books</legend>
+          <div class="form-group">
+            <label>Title</label>
+            <input class="form-control" type="text" data-ng-model="bookTitle" />
+          </div>
+          <div class="form-group">
+            <label>Author</label>
+            <input class="form-control" type="text" data-ng-model="bookAuthor" />
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input class="form-control" type="text" data-ng-model="bookSubject" />
+          </div>
+          <button class="btn btn-md btn-primary" data-ng-click="searchBooks()">Search</button>
+        </div>
       </div>
-      <div class="symbol" ng-scope-element="symbol"></div>
-      <div class="author" ng-scope-element="author">
-        <div class="hrule"></div>
-        <div class="text" ng-scope-element="authorContainer"><span>{{ books.author }}</span></div>
-        <div class="hrule"></div>
+      <div class="col-xs-12 col-sm-9 body-offcanvas book-canvas icon-wood">
+        <div class="bookcase">
+          <div data-ng-repeat="(shelfId, shelf) in totalShelves" class="shelf">
+            <div class="books" id="shelf{{shelf.id}}">
+              <div class="books-container" shelf>
+                <div class="book-fill"></div>
+                <div class="book-spine" data-ng-repeat="book in shelf.volumes" on-finish-render hrule>
+                  <div class="title" ng-scope-element="title">
+                    <div class="hrule"></div>
+                    <div class="text" ng-scope-element="titleContainer"><span ng-scope-element="title">{{ book.volumeInfo.title }}</span></div>
+                    <div class="hrule bottom-title"></div>
+                  </div>
+                  <div class="symbol" ng-scope-element="symbol"></div>
+                  <div class="author" ng-scope-element="author">
+                    <div class="hrule"></div>
+                    <div class="text" ng-scope-element="authorContainer"><span>{{ book.volumeInfo.authors }}</span></div>
+                    <div class="hrule"></div>
+                  </div>
+                  <div class="gradient" ng-scope-element="gradient" data-ng-click="openBook(book)"></div>
+                </div>
+              </div>
+            </div>
+            <div class="shelf-container">
+              <div class="shelf-mock icon-wood">
+                <div class="overlay">
+                  <div class="icon-label-holder shelf-label pull-left">{{shelf.title}}</div>
+                  <span class="scroll-left" data-ng-mousedown="scrollShelf($event, 'left', shelf.id)" data-ng-mouseup="stopScroll()"></span>
+                  <span class="scroll-right" data-ng-mousedown="scrollShelf($event, 'right', shelf.id)" data-ng-mouseup="stopScroll()"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!--<div class="cube-wrap">
+            <div box-generator class="cube depth">
+              <div ng-scope-element="front" class="front-pane"></div>
+              <div ng-scope-element="back" class="back-pane"></div>
+              <div ng-scope-element="top" class="top-pane"></div>
+              <div ng-scope-element="left" class="left-pane"></div>
+              <div ng-scope-element="right" class="right-pane"></div>
+              <div ng-scope-element="bottom" class="bottom-pane"></div>
+            </div>
+          </div>-->
+        </div>
       </div>
-      <div class="gradient" ng-scope-element="gradient" data-ng-click="openBook()"></div>
     </div>
   </div>
-  <div class="shelf-container">
-    <div class="shelf icon-wood">
-      <div class="overlay"></div>
-    </div>
-    <div class="shelf icon-wood">
-      <div class="overlay"></div>
-    </div>
-    <div class="shelf icon-wood">
-      <div class="overlay"></div>
-    </div>
-  </div>
-  <!--<div class="cube-wrap">
-    <div box-generator class="cube depth">
-      <div ng-scope-element="front" class="front-pane"></div>
-      <div ng-scope-element="back" class="back-pane"></div>
-      <div ng-scope-element="top" class="top-pane"></div>
-      <div ng-scope-element="left" class="left-pane"></div>
-      <div ng-scope-element="right" class="right-pane"></div>
-      <div ng-scope-element="bottom" class="bottom-pane"></div>
-    </div>
-  </div>-->
 </div>

@@ -7,55 +7,64 @@
  * Provides rudimentary account management functions.
  */
 angular.module('portfolioApp')
-  .controller('AccountCtrl', function ($scope, user, Auth, Ref, $firebaseObject, $timeout) {
+  .controller('AccountCtrl', function ($scope, user, Auth, Ref, $firebaseObject, $firebaseArray, $timeout, $rootScope, $localStorage) {
     $scope.user = user;
-    $scope.logout = function() { Auth.$unauth(); };
+    $scope.logout = function() {
+      $localStorage.$reset();
+      $rootScope.user = {};
+      Auth.$unauth();
+    };
+    $scope.chocolates = $firebaseArray(Ref.child('chocolates'));
     $scope.messages = [];
     var profile = $firebaseObject(Ref.child('users/'+user.uid));
-    profile.$bindTo($scope, 'profile');
-    
+    profile.$loaded().then(function () {
+      $scope.profile = profile;
 
-    $scope.changePassword = function(oldPass, newPass, confirm) {
-      $scope.err = null;
-      if( !oldPass || !newPass ) {
-        error('Please enter all fields');
+      $scope.changeName = function () {
+        profile.$save();
       }
-      else if( newPass !== confirm ) {
-        error('Passwords do not match');
-      }
-      else {
-        Auth.$changePassword({email: profile.email, oldPassword: oldPass, newPassword: newPass})
+
+      $scope.changePassword = function(oldPass, newPass, confirm) {
+        $scope.err = null;
+        if( !oldPass || !newPass ) {
+          error('Please enter all fields');
+        }
+        else if( newPass !== confirm ) {
+          error('Passwords do not match');
+        }
+        else {
+          Auth.$changePassword({email: profile.email, oldPassword: oldPass, newPassword: newPass})
+            .then(function() {
+              success('Password changed');
+            }, error);
+        }
+      };
+
+      $scope.changeEmail = function(pass, newEmail) {
+        $scope.err = null;
+        Auth.$changeEmail({password: pass, newEmail: newEmail, oldEmail: profile.email})
           .then(function() {
-            success('Password changed');
-          }, error);
+            profile.email = newEmail;
+            profile.$save();
+            success('Email changed');
+          })
+          .catch(error);
+      };
+
+      function error(err) {
+        alert(err, 'danger');
       }
-    };
 
-    $scope.changeEmail = function(pass, newEmail) {
-      $scope.err = null;
-      Auth.$changeEmail({password: pass, newEmail: newEmail, oldEmail: profile.email})
-        .then(function() {
-          profile.email = newEmail;
-          profile.$save();
-          success('Email changed');
-        })
-        .catch(error);
-    };
+      function success(msg) {
+        alert(msg, 'success');
+      }
 
-    function error(err) {
-      alert(err, 'danger');
-    }
-
-    function success(msg) {
-      alert(msg, 'success');
-    }
-
-    function alert(msg, type) {
-      var obj = {text: msg+'', type: type};
-      $scope.messages.unshift(obj);
-      $timeout(function() {
-        $scope.messages.splice($scope.messages.indexOf(obj), 1);
-      }, 10000);
-    }
-
+      function alert(msg, type) {
+        var obj = {text: msg+'', type: type};
+        $scope.messages.unshift(obj);
+        $timeout(function() {
+          $scope.messages.splice($scope.messages.indexOf(obj), 1);
+        }, 10000);
+      }
+    });
   });

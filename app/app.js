@@ -24,7 +24,9 @@ angular.module('portfolioApp', [
     'ngDragDrop',
     'colorpicker.module',
     'ui.bootstrap',
-    'ui.slider'
+    'ui.slider',
+    'ngStorage',
+    'smoothScroll'
   ])
   /*.run(function ($firebaseArray, Ref, themeService) {
     var themes = $firebaseArray(Ref.child('admin').child('default').child('themes'));

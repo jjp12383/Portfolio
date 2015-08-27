@@ -1,15 +1,19 @@
-<div  data-ng-controller="AdminConsoleCtrl" document-click="handleClick($event)">
-  <div admin-window data-ng-repeat="window in windows" data="window"></div>
-  <div class="admin-task-bar themed">
-    <div class="admin-console-menu" data-ng-show="showMenu">
-      <div data-ng-repeat="item in menu" class="admin-console-menu-item" click-anywhere-but-here="showMenu = false" data-ng-click="openMenuItem(item.name, item.id)">
-        <span class="icon icon-medium icon-admin-white"></span>
-        <span class="admin-console-menu-item-text">{{item.name}}</span>
+<div class="container-fluid" data-ng-controller="AdminConsoleCtrl" >
+  <div class="ui-view-container">
+    <div document-click="handleClick($event)">
+      <div admin-window data-ng-repeat="window in windows" data="window"></div>
+      <div class="admin-task-bar themed">
+        <div class="admin-console-menu" data-ng-show="showMenu">
+          <div data-ng-repeat="item in menu" class="admin-console-menu-item" click-anywhere-but-here="showMenu = false" data-ng-click="openMenuItem(item.name, item.id)">
+            <span class="icon icon-medium icon-admin-white"></span>
+            <span class="admin-console-menu-item-text">{{item.name}}</span>
+          </div>
+        </div>
+        <div class="icon icon-medium icon-admin admin-console-menu-icon icon-themed" data-grunticon-embed="true" click-anywhere-but-here="showMenu = false" data-ng-click="showMenu = !showMenu"></div>
+        <div class="admin-active-windows">
+          <div class="min-window-container" window-tab data-ng-repeat="window in windows" data="window"></div>
+        </div>
       </div>
-    </div>
-    <div class="icon icon-medium icon-admin admin-console-menu-icon icon-themed" data-grunticon-embed="true" click-anywhere-but-here="showMenu = false" data-ng-click="showMenu = !showMenu"></div>
-    <div class="admin-active-windows">
-      <div class="min-window-container" window-tab data-ng-repeat="window in windows" data="window"></div>
     </div>
   </div>
 </div>

@@ -1,30 +1,31 @@
-<div data-ng-controller="ThemeBuilderCtrl">
-  <div off-canvas class="row row-offcanvas row-offcanvas-left">
-    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-      <div class="framework-list">
-        <div class="framework-list-row">
-          <a class="framework-list-cell" ui-sref-active="active" ui-sref="themeBuilder.bootstrap">Bootstrap</a>
-          <a class="framework-list-cell" ui-sref-active="active" ui-sref="themeBuilder.foundation">Foundation</a>
-          <a class="framework-list-cell" ui-sref-active="active" ui-sref="themeBuilder.skeleton">Skeleton</a>
+<div class="container-fluid" data-ng-controller="ThemeBuilderCtrl">
+  <div class="ui-view-container">
+    <div off-canvas class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+        <div class="framework-list">
+          <div class="framework-list-row">
+            <a class="framework-list-cell" ui-sref-active="active" ui-sref="themeBuilder.bootstrap">Bootstrap</a>
+            <a class="framework-list-cell" ui-sref-active="active" ui-sref="themeBuilder.foundation">Foundation</a>
+            <a class="framework-list-cell" ui-sref-active="active" ui-sref="themeBuilder.skeleton">Skeleton</a>
+          </div>
         </div>
+        <div ui-view></div>
       </div>
-      <div ui-view></div>
-    </div>
-    <div class="col-xs-12 col-sm-9 body-offcanvas" data-drop="true" data-jqyoui-options jqyoui-droppable="{onDrop: 'dropped'}" data-ng-model="themes">
-      <p class="pull-left visible-xs toggle-menu-button">
-        <button type="button" id="toggleOffMenu" class="btn btn-primary btn-xs">Toggle Nav</button>
-      </p>
-      <div data-ng-repeat="theme in themes" class="theme-builder-cell">
-        <div class="btn-group pull-right ui-actions-grid" role="group" aria-label="UI Item Actions">
-          <button type="button" class="btn btn-default btn-xs" data-ng-click="removeItem(theme)"><i class="glyphicon glyphicon-trash"></i></button>
-          <button type="button" class="btn btn-default btn-xs" data-ng-click="editItem(theme)"><i class="glyphicon glyphicon-edit"></i></button>
-        </div>
-        <div class="form-group">
-          <label class="control-label">{{theme.label}}</label>
-          <div data-ng-bind-html="trustAsHtml(themes[$index].markup)"></div>
+      <div class="col-xs-12 col-sm-9 body-offcanvas" data-drop="true" data-jqyoui-options jqyoui-droppable="{onDrop: 'dropped'}" data-ng-model="themes">
+        <p class="pull-left visible-xs toggle-menu-button">
+          <button type="button" id="toggleOffMenu" class="btn btn-primary btn-xs">Toggle Nav</button>
+        </p>
+        <div data-ng-repeat="theme in themes" class="theme-builder-cell">
+          <div class="btn-group pull-right ui-actions-grid" role="group" aria-label="UI Item Actions">
+            <button type="button" class="btn btn-default btn-xs" data-ng-click="removeItem(theme)"><i class="glyphicon glyphicon-trash"></i></button>
+            <button type="button" class="btn btn-default btn-xs" data-ng-click="editItem(theme)"><i class="glyphicon glyphicon-edit"></i></button>
+          </div>
+          <div class="form-group">
+            <label class="control-label">{{theme.label}}</label>
+            <div data-ng-bind-html="trustAsHtml(themes[$index].markup)"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
 </div>

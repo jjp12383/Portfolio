@@ -13,133 +13,152 @@
 		<script>
 			/*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
 
-(function(e){function n(n,t,o,a){"use strict";var i=e.document.createElement("link"),r=t||e.document.getElementsByTagName("script")[0],d=e.document.styleSheets;return i.rel="stylesheet",i.href=n,i.media="only x",a&&(i.onload=a),r.parentNode.insertBefore(i,r),i.onloadcssdefined=function(e){for(var t,o=0;d.length>o;o++)d[o].href&&d[o].href.indexOf(n)>-1&&(t=!0);t?e():setTimeout(function(){i.onloadcssdefined(e)})},i.onloadcssdefined(function(){i.media=o||"all"}),i}function t(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}var o=function(a,i){"use strict";if(a&&3===a.length){var r=e.Image,d=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===navigator.userAgent.indexOf("Chrome")||-1!==navigator.userAgent.indexOf("Series40")),c=new r;c.onerror=function(){o.method="png",o.href=a[2],n(a[2])},c.onload=function(){var e=1===c.width&&1===c.height,r=a[e&&d?0:e?1:2];o.method=e&&d?"svg":e?"datapng":"png",o.href=r,t(n(r),i)},c.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};o.loadCSS=n,o.onloadCSS=t,e.grunticon=o})(this);(function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,d={};if(n=e.sheet,!n)return d;t=n.cssRules?n.cssRules:n.rules;for(var s=0;t.length>s;s++)r=t[s].cssText,a=o+t[s].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),d[a]=c);return d},c=function(e){var n,r,a;r="data-grunticon-embed";for(var i in e){a=i.slice(o.length);try{n=t.querySelectorAll(a+"["+r+"]")}catch(c){continue}if(n.length)for(var d=0;n.length>d;d++)n[d].innerHTML=e[i],n[d].style.backgroundImage="none",n[d].removeAttribute(r)}return n},d=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=d,e.embedSVG=d})(grunticon,this);
+!function(){function e(e,n,t,o){"use strict";var r=window.document.createElement("link"),a=n||window.document.getElementsByTagName("script")[0],i=window.document.styleSheets;return r.rel="stylesheet",r.href=e,r.media="only x",o&&(r.onload=o),a.parentNode.insertBefore(r,a),r.onloadcssdefined=function(n){for(var t,o=0;o<i.length;o++)i[o].href&&i[o].href.indexOf(e)>-1&&(t=!0);t?n():setTimeout(function(){r.onloadcssdefined(n)})},r.onloadcssdefined(function(){r.media=t||"all"}),r}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(r,a){"use strict";if(r&&3===r.length){var i=t.navigator,c=t.document,d=t.Image,s=!(!c.createElementNS||!c.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===i.userAgent.indexOf("Chrome")||-1!==i.userAgent.indexOf("Series40")),l=new d;l.onerror=function(){o.method="png",o.href=r[2],e(r[2])},l.onload=function(){var t=1===l.width&&1===l.height,i=r[t&&s?0:t?1:2];t&&s?o.method="svg":t?o.method="datapng":o.method="png",o.href=i,n(e(i),a)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",c.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this),function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,d={};if(n=e.sheet,!n)return d;t=n.cssRules?n.cssRules:n.rules;for(var s=0;s<t.length;s++)r=t[s].cssText,a=o+t[s].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),d[a]=c);return d},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(d){continue}r=[];for(var s=0;s<n.length;s++)null!==n[s].getAttribute(a)&&r.push(n[s]);if(r.length)for(s=0;s<r.length;s++)r[s].innerHTML=e[c],r[s].style.backgroundImage="none",r[s].removeAttribute(a)}return r},d=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=d,e.embedSVG=d}(grunticon,this)}();
 			
-			
-			grunticon(["icons.data.svg.css", "icons.data.png.css", "icons.fallback.css"]);
+			grunticon(["icons.data.svg.css", "icons.data.png.css", "icons.fallback.css"], grunticon.svgLoadedCallback);
 		</script>
 		<noscript><link href="icons.fallback.css" rel="stylesheet"></noscript>
-
 	</head>
 	<body>
 
-		<h1>PREVIEW - you can change this in the previewTemplate option</h1>
-		
-			
+		<h1>CUSTOM PREVIEW - you can change this in the previewTemplate option</h1>
+			<pre><code>.icon-NeedsReviewFill:</code></pre><div class="icon-NeedsReviewFill" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-NeedsReviewOpen:</code></pre><div class="icon-NeedsReviewOpen" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-PDF_icon:</code></pre><div class="icon-PDF_icon" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-add:</code></pre><div class="icon-add" style="width: 400px; height: 300px;" ></div><hr/>
 			<pre><code>.icon-admin-white:</code></pre><div class="icon-admin-white" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-admin:</code></pre><div class="icon-admin" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-angle-bracket-left:</code></pre><div class="icon-angle-bracket-left" style="width: 7px; height: 32px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-angle-bracket-right:</code></pre><div class="icon-angle-bracket-right" style="width: 7px; height: 32px;" ></div><hr/>
-			
-		
-			
+			<pre><code>.icon-arrow-right:</code></pre><div class="icon-arrow-right" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-arrow-select:</code></pre><div class="icon-arrow-select" style="width: 31px; height: 30px;" ></div><hr/>
+			<pre><code>.icon-bars:</code></pre><div class="icon-bars" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-bell:</code></pre><div class="icon-bell" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-book-symbol-1:</code></pre><div class="icon-book-symbol-1" style="width: 31.537226mmpx; height: 31.555836mmpx;" ></div><hr/>
+			<pre><code>.icon-book-symbol-10:</code></pre><div class="icon-book-symbol-10" style="width: 31.770218mmpx; height: 31.770199mmpx;" ></div><hr/>
+			<pre><code>.icon-book-symbol-11:</code></pre><div class="icon-book-symbol-11" style="width: 31.302343mmpx; height: 18.0993mmpx;" ></div><hr/>
+			<pre><code>.icon-book-symbol-12:</code></pre><div class="icon-book-symbol-12" style="width: 24.69169mmpx; height: 25.163176mmpx;" ></div><hr/>
+			<pre><code>.icon-book-symbol-2:</code></pre><div class="icon-book-symbol-2" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-book-symbol-3:</code></pre><div class="icon-book-symbol-3" style="width: 228.59065px; height: 224.21092px;" ></div><hr/>
+			<pre><code>.icon-book-symbol-4:</code></pre><div class="icon-book-symbol-4" style="width: 38.370346mmpx; height: 38.37059mmpx;" ></div><hr/>
+			<pre><code>.icon-book-symbol-5:</code></pre><div class="icon-book-symbol-5" style="width: 26.200058mmpx; height: 23.954424mmpx;" ></div><hr/>
+			<pre><code>.icon-book-symbol-6:</code></pre><div class="icon-book-symbol-6" style="width: 25.285666mmpx; height: 25.728058mmpx;" ></div><hr/>
+			<pre><code>.icon-book-symbol-7:</code></pre><div class="icon-book-symbol-7" style="width: 53.292622mmpx; height: 53.292934mmpx;" ></div><hr/>
+			<pre><code>.icon-book-symbol-8:</code></pre><div class="icon-book-symbol-8" style="width: 45.439457mmpx; height: 45.439457mmpx;" ></div><hr/>
+			<pre><code>.icon-book-symbol-9:</code></pre><div class="icon-book-symbol-9" style="width: 24.593645mmpx; height: 11.497807mmpx;" ></div><hr/>
+			<pre><code>.icon-book:</code></pre><div class="icon-book" style="width: 400px; height: 300px;" ></div><hr/>
 			<pre><code>.icon-bookcase-white:</code></pre><div class="icon-bookcase-white" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-bookcase:</code></pre><div class="icon-bookcase" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
+			<pre><code>.icon-booklet:</code></pre><div class="icon-booklet" style="width: 400px; height: 300px;" ></div><hr/>
 			<pre><code>.icon-bracket-left:</code></pre><div class="icon-bracket-left" style="width: 7px; height: 32px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-bracket-right:</code></pre><div class="icon-bracket-right" style="width: 7px; height: 32px;" ></div><hr/>
-			
-		
-			
-			<pre><code>.icon-celtic1:</code></pre><div class="icon-celtic1" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
-			<pre><code>.icon-celtic2:</code></pre><div class="icon-celtic2" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
+			<pre><code>.icon-calendar:</code></pre><div class="icon-calendar" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-cart:</code></pre><div class="icon-cart" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-check-circle-filled:</code></pre><div class="icon-check-circle-filled" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-check-circle:</code></pre><div class="icon-check-circle" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-check:</code></pre><div class="icon-check" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-chevron-down-heavy:</code></pre><div class="icon-chevron-down-heavy" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-chevron-down:</code></pre><div class="icon-chevron-down" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-chevron-left-heavy-trans:</code></pre><div class="icon-chevron-left-heavy-trans" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-chevron-left-heavy:</code></pre><div class="icon-chevron-left-heavy" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-chevron-left:</code></pre><div class="icon-chevron-left" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-chevron-right-heavy-trans:</code></pre><div class="icon-chevron-right-heavy-trans" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-chevron-right-heavy:</code></pre><div class="icon-chevron-right-heavy" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-chevron-right:</code></pre><div class="icon-chevron-right" style="width: 400px; height: 300px;" ></div><hr/>
 			<pre><code>.icon-chocolate-white:</code></pre><div class="icon-chocolate-white" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-chocolate:</code></pre><div class="icon-chocolate" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
+			<pre><code>.icon-choose-icon:</code></pre><div class="icon-choose-icon" style="width: 80px; height: 80px;" ></div><hr/>
+			<pre><code>.icon-circle-outline:</code></pre><div class="icon-circle-outline" style="width: 400px; height: 300px;" ></div><hr/>
 			<pre><code>.icon-close-white:</code></pre><div class="icon-close-white" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-close:</code></pre><div class="icon-close" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
+			<pre><code>.icon-copy-icon:</code></pre><div class="icon-copy-icon" style="width: 80px; height: 82px;" ></div><hr/>
 			<pre><code>.icon-curly-bracket-left:</code></pre><div class="icon-curly-bracket-left" style="width: 10px; height: 32px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-curly-bracket-right:</code></pre><div class="icon-curly-bracket-right" style="width: 10px; height: 32px;" ></div><hr/>
-			
-		
-			
+			<pre><code>.icon-dashboard:</code></pre><div class="icon-dashboard" style="width: 16px; height: 16px;" ></div><hr/>
 			<pre><code>.icon-default-size-white:</code></pre><div class="icon-default-size-white" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-default-size:</code></pre><div class="icon-default-size" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
+			<pre><code>.icon-document:</code></pre><div class="icon-document" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-download:</code></pre><div class="icon-download" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-eye:</code></pre><div class="icon-eye" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-facebook:</code></pre><div class="icon-facebook" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-filter:</code></pre><div class="icon-filter" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-folder:</code></pre><div class="icon-folder" style="width: 400px; height: 300px;" ></div><hr/>
 			<pre><code>.icon-globe-white:</code></pre><div class="icon-globe-white" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-globe:</code></pre><div class="icon-globe" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
+			<pre><code>.icon-google-plus:</code></pre><div class="icon-google-plus" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-graduation-hat:</code></pre><div class="icon-graduation-hat" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-grid:</code></pre><div class="icon-grid" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-id-card:</code></pre><div class="icon-id-card" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-info-circle-filled:</code></pre><div class="icon-info-circle-filled" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-info-circle:</code></pre><div class="icon-info-circle" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-institution:</code></pre><div class="icon-institution" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-key:</code></pre><div class="icon-key" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-label-holder:</code></pre><div class="icon-label-holder" style="width: 90.424004mmpx; height: 18.796001mmpx;" ></div><hr/>
 			<pre><code>.icon-leather:</code></pre><div class="icon-leather" style="width: 398px; height: 484px;" ></div><hr/>
-			
-		
-			
-			<pre><code>.icon-mandala1:</code></pre><div class="icon-mandala1" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
+			<pre><code>.icon-linkedin:</code></pre><div class="icon-linkedin" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-list:</code></pre><div class="icon-list" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-lock:</code></pre><div class="icon-lock" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-mail:</code></pre><div class="icon-mail" style="width: 400px; height: 300px;" ></div><hr/>
 			<pre><code>.icon-maximize-white:</code></pre><div class="icon-maximize-white" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-maximize:</code></pre><div class="icon-maximize" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-minimize-white:</code></pre><div class="icon-minimize-white" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-minimize:</code></pre><div class="icon-minimize" style="width: 400px; height: 300px;" ></div><hr/>
-			
-		
-			
+			<pre><code>.icon-needs-review-nofill:</code></pre><div class="icon-needs-review-nofill" style="width: 400px; height: 300px;" ></div><hr/>
 			<pre><code>.icon-parentheses-left:</code></pre><div class="icon-parentheses-left" style="width: 8px; height: 32px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.icon-parentheses-right:</code></pre><div class="icon-parentheses-right" style="width: 8px; height: 32px;" ></div><hr/>
-			
-		
-			
+			<pre><code>.icon-pencil:</code></pre><div class="icon-pencil" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-phone:</code></pre><div class="icon-phone" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-pinterest:</code></pre><div class="icon-pinterest" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-printer:</code></pre><div class="icon-printer" style="width: 16px; height: 16px;" ></div><hr/>
+			<pre><code>.icon-profile-icon:</code></pre><div class="icon-profile-icon" style="width: 80px; height: 80px;" ></div><hr/>
+			<pre><code>.icon-question-mark-circle:</code></pre><div class="icon-question-mark-circle" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-question-mark:</code></pre><div class="icon-question-mark" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-receipt:</code></pre><div class="icon-receipt" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-review-icon:</code></pre><div class="icon-review-icon" style="width: 80px; height: 80px;" ></div><hr/>
+			<pre><code>.icon-star:</code></pre><div class="icon-star" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-thumbs-up:</code></pre><div class="icon-thumbs-up" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-trash:</code></pre><div class="icon-trash" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-twitter:</code></pre><div class="icon-twitter" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-unread-circle:</code></pre><div class="icon-unread-circle" style="width: 16px; height: 16px;" ></div><hr/>
+			<pre><code>.icon-user:</code></pre><div class="icon-user" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-warning-shape:</code></pre><div class="icon-warning-shape" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-warning-symbol:</code></pre><div class="icon-warning-symbol" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-warning:</code></pre><div class="icon-warning" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-what-icon:</code></pre><div class="icon-what-icon" style="width: 50px; height: 50px;" ></div><hr/>
+			<pre><code>.icon-wood-90:</code></pre><div class="icon-wood-90" style="width: 850px; height: 850px;" ></div><hr/>
 			<pre><code>.icon-wood:</code></pre><div class="icon-wood" style="width: 850px; height: 850px;" ></div><hr/>
-			
-		
+			<pre><code>.icon-x:</code></pre><div class="icon-x" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-youtube:</code></pre><div class="icon-youtube" style="width: 400px; height: 300px;" ></div><hr/>
+
+		<h2 id="embedded-svg-option">Embedded SVG option</h2>
+		<p>(The <code>data-grunticon-embed</code> attribute tells grunticon to inject SVG inline):</p>
+
+		<pre><code>icon-burger:</code></pre><div class="icon-burger" data-grunticon-embed style="width: px; height: px;" ></div><hr/>
+
+		<style>
+			.icon-burger {
+				width: 32px;
+				height: 30px;
+				display: inline-block;
+			}
+			  .icon-burger.alt .cheese {
+		                fill: red;
+		            }
+				 .icon-burger.alt .buns {
+		                fill: orange;
+		            }
+				  .icon-burger.alt .burger {
+		                fill: yellow;
+		            }
+		 		 .icon-burger.alt .lettuce {
+		                fill: green;
+		            }
+
+		</style>
+
+		<pre><code>icon-burger (styled variation):</code></pre><div class="icon-burger alt" data-grunticon-embed></div><hr/>
+
+
+
 </body>
 </html>

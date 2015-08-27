@@ -1,3 +1,11 @@
+.icon-NeedsReviewFill { background-image: url('png/NeedsReviewFill.png'); background-repeat: no-repeat; }
+
+.icon-NeedsReviewOpen { background-image: url('png/NeedsReviewOpen.png'); background-repeat: no-repeat; }
+
+.icon-PDF_icon { background-image: url('png/PDF_icon.png'); background-repeat: no-repeat; }
+
+.icon-add { background-image: url('png/add.png'); background-repeat: no-repeat; }
+
 .icon-admin-white { background-image: url('png/admin-white.png'); background-repeat: no-repeat; }
 
 .icon-admin { background-image: url('png/admin.png'); background-repeat: no-repeat; }
@@ -6,39 +14,147 @@
 
 .icon-angle-bracket-right { background-image: url('png/angle-bracket-right.png'); background-repeat: no-repeat; }
 
+.icon-arrow-right { background-image: url('png/arrow-right.png'); background-repeat: no-repeat; }
+
+.icon-arrow-select { background-image: url('png/arrow-select.png'); background-repeat: no-repeat; }
+
+.icon-bars { background-image: url('png/bars.png'); background-repeat: no-repeat; }
+
+.icon-bell { background-image: url('png/bell.png'); background-repeat: no-repeat; }
+
+.icon-book-symbol-1 { background-image: url('png/book-symbol-1.png'); background-repeat: no-repeat; }
+
+.icon-book-symbol-10 { background-image: url('png/book-symbol-10.png'); background-repeat: no-repeat; }
+
+.icon-book-symbol-11 { background-image: url('png/book-symbol-11.png'); background-repeat: no-repeat; }
+
+.icon-book-symbol-12 { background-image: url('png/book-symbol-12.png'); background-repeat: no-repeat; }
+
+.icon-book-symbol-2 { background-image: url('png/book-symbol-2.png'); background-repeat: no-repeat; }
+
+.icon-book-symbol-3 { background-image: url('png/book-symbol-3.png'); background-repeat: no-repeat; }
+
+.icon-book-symbol-4 { background-image: url('png/book-symbol-4.png'); background-repeat: no-repeat; }
+
+.icon-book-symbol-5 { background-image: url('png/book-symbol-5.png'); background-repeat: no-repeat; }
+
+.icon-book-symbol-6 { background-image: url('png/book-symbol-6.png'); background-repeat: no-repeat; }
+
+.icon-book-symbol-7 { background-image: url('png/book-symbol-7.png'); background-repeat: no-repeat; }
+
+.icon-book-symbol-8 { background-image: url('png/book-symbol-8.png'); background-repeat: no-repeat; }
+
+.icon-book-symbol-9 { background-image: url('png/book-symbol-9.png'); background-repeat: no-repeat; }
+
+.icon-book { background-image: url('png/book.png'); background-repeat: no-repeat; }
+
 .icon-bookcase-white { background-image: url('png/bookcase-white.png'); background-repeat: no-repeat; }
 
 .icon-bookcase { background-image: url('png/bookcase.png'); background-repeat: no-repeat; }
+
+.icon-booklet { background-image: url('png/booklet.png'); background-repeat: no-repeat; }
 
 .icon-bracket-left { background-image: url('png/bracket-left.png'); background-repeat: no-repeat; }
 
 .icon-bracket-right { background-image: url('png/bracket-right.png'); background-repeat: no-repeat; }
 
+.icon-calendar { background-image: url('png/calendar.png'); background-repeat: no-repeat; }
+
+.icon-cart { background-image: url('png/cart.png'); background-repeat: no-repeat; }
+
 .icon-celtic1 { background-image: url('png/celtic1.png'); background-repeat: no-repeat; }
 
 .icon-celtic2 { background-image: url('png/celtic2.png'); background-repeat: no-repeat; }
+
+.icon-check-circle-filled { background-image: url('png/check-circle-filled.png'); background-repeat: no-repeat; }
+
+.icon-check-circle { background-image: url('png/check-circle.png'); background-repeat: no-repeat; }
+
+.icon-check { background-image: url('png/check.png'); background-repeat: no-repeat; }
+
+.icon-chevron-down-heavy { background-image: url('png/chevron-down-heavy.png'); background-repeat: no-repeat; }
+
+.icon-chevron-down { background-image: url('png/chevron-down.png'); background-repeat: no-repeat; }
+
+.icon-chevron-left-heavy-trans { background-image: url('png/chevron-left-heavy-trans.png'); background-repeat: no-repeat; }
+
+.icon-chevron-left-heavy { background-image: url('png/chevron-left-heavy.png'); background-repeat: no-repeat; }
+
+.icon-chevron-left { background-image: url('png/chevron-left.png'); background-repeat: no-repeat; }
+
+.icon-chevron-right-heavy-trans { background-image: url('png/chevron-right-heavy-trans.png'); background-repeat: no-repeat; }
+
+.icon-chevron-right-heavy { background-image: url('png/chevron-right-heavy.png'); background-repeat: no-repeat; }
+
+.icon-chevron-right { background-image: url('png/chevron-right.png'); background-repeat: no-repeat; }
 
 .icon-chocolate-white { background-image: url('png/chocolate-white.png'); background-repeat: no-repeat; }
 
 .icon-chocolate { background-image: url('png/chocolate.png'); background-repeat: no-repeat; }
 
+.icon-choose-icon { background-image: url('png/choose-icon.png'); background-repeat: no-repeat; }
+
+.icon-circle-outline { background-image: url('png/circle-outline.png'); background-repeat: no-repeat; }
+
 .icon-close-white { background-image: url('png/close-white.png'); background-repeat: no-repeat; }
 
 .icon-close { background-image: url('png/close.png'); background-repeat: no-repeat; }
+
+.icon-copy-icon { background-image: url('png/copy-icon.png'); background-repeat: no-repeat; }
 
 .icon-curly-bracket-left { background-image: url('png/curly-bracket-left.png'); background-repeat: no-repeat; }
 
 .icon-curly-bracket-right { background-image: url('png/curly-bracket-right.png'); background-repeat: no-repeat; }
 
+.icon-dashboard { background-image: url('png/dashboard.png'); background-repeat: no-repeat; }
+
 .icon-default-size-white { background-image: url('png/default-size-white.png'); background-repeat: no-repeat; }
 
 .icon-default-size { background-image: url('png/default-size.png'); background-repeat: no-repeat; }
+
+.icon-document { background-image: url('png/document.png'); background-repeat: no-repeat; }
+
+.icon-download { background-image: url('png/download.png'); background-repeat: no-repeat; }
+
+.icon-eye { background-image: url('png/eye.png'); background-repeat: no-repeat; }
+
+.icon-facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
+
+.icon-filter { background-image: url('png/filter.png'); background-repeat: no-repeat; }
+
+.icon-folder { background-image: url('png/folder.png'); background-repeat: no-repeat; }
 
 .icon-globe-white { background-image: url('png/globe-white.png'); background-repeat: no-repeat; }
 
 .icon-globe { background-image: url('png/globe.png'); background-repeat: no-repeat; }
 
+.icon-google-plus { background-image: url('png/google-plus.png'); background-repeat: no-repeat; }
+
+.icon-graduation-hat { background-image: url('png/graduation-hat.png'); background-repeat: no-repeat; }
+
+.icon-grid { background-image: url('png/grid.png'); background-repeat: no-repeat; }
+
+.icon-id-card { background-image: url('png/id-card.png'); background-repeat: no-repeat; }
+
+.icon-info-circle-filled { background-image: url('png/info-circle-filled.png'); background-repeat: no-repeat; }
+
+.icon-info-circle { background-image: url('png/info-circle.png'); background-repeat: no-repeat; }
+
+.icon-institution { background-image: url('png/institution.png'); background-repeat: no-repeat; }
+
+.icon-key { background-image: url('png/key.png'); background-repeat: no-repeat; }
+
+.icon-label-holder { background-image: url('png/label-holder.png'); background-repeat: no-repeat; }
+
 .icon-leather { background-image: url('png/leather.png'); background-repeat: no-repeat; }
+
+.icon-linkedin { background-image: url('png/linkedin.png'); background-repeat: no-repeat; }
+
+.icon-list { background-image: url('png/list.png'); background-repeat: no-repeat; }
+
+.icon-lock { background-image: url('png/lock.png'); background-repeat: no-repeat; }
+
+.icon-mail { background-image: url('png/mail.png'); background-repeat: no-repeat; }
 
 .icon-mandala1 { background-image: url('png/mandala1.png'); background-repeat: no-repeat; }
 
@@ -50,9 +166,55 @@
 
 .icon-minimize { background-image: url('png/minimize.png'); background-repeat: no-repeat; }
 
+.icon-needs-review-nofill { background-image: url('png/needs-review-nofill.png'); background-repeat: no-repeat; }
+
 .icon-parentheses-left { background-image: url('png/parentheses-left.png'); background-repeat: no-repeat; }
 
 .icon-parentheses-right { background-image: url('png/parentheses-right.png'); background-repeat: no-repeat; }
 
+.icon-pencil { background-image: url('png/pencil.png'); background-repeat: no-repeat; }
+
+.icon-phone { background-image: url('png/phone.png'); background-repeat: no-repeat; }
+
+.icon-pinterest { background-image: url('png/pinterest.png'); background-repeat: no-repeat; }
+
+.icon-printer { background-image: url('png/printer.png'); background-repeat: no-repeat; }
+
+.icon-profile-icon { background-image: url('png/profile-icon.png'); background-repeat: no-repeat; }
+
+.icon-question-mark-circle { background-image: url('png/question-mark-circle.png'); background-repeat: no-repeat; }
+
+.icon-question-mark { background-image: url('png/question-mark.png'); background-repeat: no-repeat; }
+
+.icon-receipt { background-image: url('png/receipt.png'); background-repeat: no-repeat; }
+
+.icon-review-icon { background-image: url('png/review-icon.png'); background-repeat: no-repeat; }
+
+.icon-star { background-image: url('png/star.png'); background-repeat: no-repeat; }
+
+.icon-thumbs-up { background-image: url('png/thumbs-up.png'); background-repeat: no-repeat; }
+
+.icon-trash { background-image: url('png/trash.png'); background-repeat: no-repeat; }
+
+.icon-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
+
+.icon-unread-circle { background-image: url('png/unread-circle.png'); background-repeat: no-repeat; }
+
+.icon-user { background-image: url('png/user.png'); background-repeat: no-repeat; }
+
+.icon-warning-shape { background-image: url('png/warning-shape.png'); background-repeat: no-repeat; }
+
+.icon-warning-symbol { background-image: url('png/warning-symbol.png'); background-repeat: no-repeat; }
+
+.icon-warning { background-image: url('png/warning.png'); background-repeat: no-repeat; }
+
+.icon-what-icon { background-image: url('png/what-icon.png'); background-repeat: no-repeat; }
+
+.icon-wood-90 { background-image: url('png/wood-90.png'); background-repeat: no-repeat; }
+
 .icon-wood { background-image: url('png/wood.png'); background-repeat: no-repeat; }
+
+.icon-x { background-image: url('png/x.png'); background-repeat: no-repeat; }
+
+.icon-youtube { background-image: url('png/youtube.png'); background-repeat: no-repeat; }
 
